@@ -2,7 +2,60 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<title>Smarty - Multipurpose + Admin</title>
+		<title>Accueil</title>
+		<link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon" />
+		<!-- Ca va aller dans une page externe css avant la remise -->
+		<style>
+            #ruban{
+                background:#b3d4fc;
+            <!--max-width:900px;-->
+                margin:auto;
+                padding:20px;
+                height:100px; 
+            }
+            
+            #jobba{
+                text-align: center;
+                position: relative;
+                color:#fff;
+                margin:10px -30px 50px -30px;
+                padding:15px 0;
+                background:#003da5;
+                box-shadow:0 3px 0 rgba(0,0,0,0.3);
+            }
+            
+            #jobba a{
+                text-decoration: none;
+                padding: 0px 20px;
+                font-size: 18px;
+                color:#fff;
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+            
+            #jobba a:hover{
+                color:#000;
+            }
+            
+            #jobba:before, #jobba:after{
+                content: '';
+                position:absolute;
+                border-style:solid;
+                border-color:transparent;
+                bottom:-10px;
+            }
+            #jobba:before{
+                border-width: 0 10px 10px 0;
+                border-right-color: #222;
+                left:0;
+            }
+            #jobba:after{
+                border-width: 0 0 10px 10px;
+                border-left-color: #222;
+                right:0;
+            }
+        </style>
+        
 		<meta name="description" content="" />
 		<meta name="Author" content="Dorin Grigoras [www.stepofweb.com]" />
 
@@ -135,7 +188,7 @@
 						</button>
 
 						<!-- Logo -->
-						<a class="logo float-left scrollTo" href="#top">
+						<a class="logo float-left scrollTo" href="index-onepage-construction.html">
 							<img src="assets/images/_smarty/R2.png" alt="" />
 						</a>
 
@@ -157,38 +210,35 @@
 								<ul id="topMain" class="nav nav-pills nav-main nav-onepage">
 									<li class="active"><!-- HOME -->
 										<a href="#home">
-											ACCUEIL
+                                        <!-- Je dois mettre dans une page externe mon css. Attention! Il faut changer le background pour que la maison soit visible lorsque quelqu'un consulte la page sur un mobile -->
+										    <img src="image/house.png" alt="HOME"  width="40"> 
 										</a>
 									</li>
 									<li><!-- SERVICES -->
 										<a href="#services">
-											RÉSIDENTIEL
+											SERVICES
 										</a>
 									</li>
 									<li><!-- WORK -->
 										<a href="#work">
-											COMMERCIAL
+											PORTFOLIO
 										</a>
+									</li>
 									</li>
 									<li><!-- NEWS -->
 										<a href="#news">
-											CONTACTEZ-NOUS
+										    COMMERCIAL
 										</a>
 									</li>
 					
                                     <li><!-- OVERVIEW -->
 										<a href="#overview">
-											OVERVIEW
+											NEWS
 										</a>
 									</li>
 									<li><!-- CLIENTS -->
 										<a href="#clients">
 											CLIENTS
-										</a>
-									</li>
-									<li><!-- BLOG -->
-										<a class="external" href="blog-default-aside-left.html">
-											BLOG
 										</a>
 									</li>
 									<li><!-- CONTACT -->
@@ -243,9 +293,9 @@
 					<ul class="hide">
 					
 						<!-- SLIDE  -->
-						<li data-transition="parallaxtobottom" data-slotamount="7" data-masterspeed="300"  data-saveperformance="off"  data-title="Architectural View">
+						<li data-transition="parallaxtobottom" data-slotamount="7" data-masterspeed="300"  data-saveperformance="off"  data-title="Hola">
 							<!-- MAIN IMAGE -->
-							<img src="demo_files/images/mdl-blue-min.jpg"  alt="cover image"  data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
+							<img src="demo_files/images/thematics/construction/AdobeStock_122227340.jpeg"  alt="cover image"  data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
 
 							<div class="tp-caption white_big skewfromleft tp-resizeme"
 								data-x="471"
@@ -259,7 +309,7 @@
 								data-endelementdelay="0.1"
 								data-endspeed="600"
 								style="z-index: 2; color:#fff; font-size:65px; line-height:85px; font-weight:bold; letter-spacing:0; text-shadow:none;">
-									KOBE BRYANT
+									SLOGAN
 							</div>
 
 							<div class="tp-caption content_text_center skewfromleft tp-resizeme"
@@ -274,9 +324,9 @@
 								data-endelementdelay="0.1"
 								data-endspeed="600"
 
-								style="z-index: 3; font-size:20px; color:#fff; font-weight:300; text-shadow:none;">
-									If you dream of designing a new home that takes full advantage, <br />
-									our team is the best in this field.
+								style="z-index: 3; font-size:40px; color:#fff; font-weight:300; text-shadow:none;">
+									Let your fingers do the walking  <br />
+									through the Rocket elavator.
 							</div>
 
 							<div class="tp-caption tp-fade"
@@ -289,12 +339,12 @@
 								data-endelementdelay="0.1"
 								data-endspeed="300"
 								style="z-index: 4;">
-									<img src="demo_files/images/thematics/construction/jordan.png" alt="">
+									<!--<img src="demo_files/images/thematics/construction/R2.png" alt="" width="200">  -->
 							</div>
 
 							<div class="tp-caption skewfromleft tp-resizeme  un-button-2-lg"
 								data-x="665"
-								data-y="300" 
+								data-y="350" 
 								data-speed="300"
 								data-start="2500"
 								data-easing="Power3.easeInOut"
@@ -310,7 +360,7 @@
 							
 				            <div class="tp-caption sfb tp-resizeme"
 								data-x="865"
-								data-y="300" 
+								data-y="350" 
 								data-speed="300"
 								data-start="2500"
 								data-easing="Power3.easeInOut"
@@ -325,7 +375,7 @@
 						</li>
 
 						<!-- SLIDE  -->
-						<li data-transition="parallaxtotop" data-slotamount="7" data-masterspeed="300"  data-saveperformance="off" data-title="Bright Future">
+						<li data-transition="parallaxtotop" data-slotamount="7" data-masterspeed="300"  data-saveperformance="off" data-title=" Immeubles résidentiels">
 							<!-- MAIN IMAGE -->
 							<img src="demo_files/images/thematics/construction/AdobeStock_122227340.jpeg" alt="cover image"  data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
 
@@ -397,7 +447,7 @@
 						</li>
 
 						<!-- SLIDE  -->
-						<li data-transition="parallaxtobottom" data-slotamount="7" data-masterspeed="600"  data-saveperformance="off"  data-title="Architectural View">
+						<li data-transition="parallaxtobottom" data-slotamount="7" data-masterspeed="600"  data-saveperformance="off"  data-title="hello">
 							<!-- MAIN IMAGE -->
 							<img src="demo_files/images/mdl-blue-min.jpg"  alt="cover image"  data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
 
@@ -471,16 +521,385 @@
 
 
 			<hr class="m-0" /><!-- 1px line separator -->
+            <div class="container" id="ruban">
+                <nav id="jobba">
+                    <a href="#">REWARD & PROJECT</a>
+                    <a href="#">service for residential buildings</a>
+                    <a href="#">service for corporate buildings</a>
+                </nav>        
+            </div>
+            
+            <hr class="m-0" /><!-- 1px line separator -->
+            
+
+            
+            <!-- PORTFOLIO -->
+			<section id="work">
+				<div class="container">
+
+                    <div class="heading-title heading-dotted text-center">
+						    <h2>PORTFOLIO</h2>
+                    </div>
+
+					<div class="text-center">
+						<ul class="nav nav-pills mix-filter mb-60">
+							<li data-filter="all" class="filter active"><a href="#">All</a></li>
+							<li data-filter="development" class="filter"><a href="#">Recognitions</a></li>
+							<li data-filter="photography" class="filter"><a href="#">Major projects</a></li>
+							<li data-filter="design" class="filter"><a href="#">Design</a></li>
+						</ul>
+					</div>
+
+				</div>
+
+				<div id="portfolio" class="portfolio-nogutter">
+
+						<div class="row mix-grid">
+
+							<div class="col-md-3 col-sm-3 mix design"><!-- item -->
+
+								<div class="item-box">
+									<figure>
+										<span class="item-hover">
+											<span class="overlay dark-5"></span>
+											<span class="inner">
+
+												<!-- lightbox -->
+												<a class="ico-rounded lightbox" href="demo_files/images/thematics/construction/w1-min.jpg" data-plugin-options='{"type":"image"}'>
+													<span class="fa fa-plus fs-20"></span>
+												</a>
+
+												<!-- details -->
+												<a class="ico-rounded lightbox" href="ajax/portfolio-detail-modal-6.html" data-plugin-options='{"type":"ajax", "closeOnBgClick":false}'>
+													<span class="glyphicon glyphicon-option-horizontal fs-20"></span>
+												</a>
+
+											</span>
+										</span>
+
+										<img class="img-fluid" src="demo_files/images/thematics/construction/w1-min.jpg" width="600" height="399" alt="">
+									</figure>
+
+									<div class="item-box-desc">
+										<h3>Architect Project</h3>
+										<ul class="list-inline categories m-0">
+											<li><a href="#">Architecture</a></li>
+											<li><a href="#">Design</a></li>
+										</ul>
+									</div>
+
+								</div>
+
+							</div><!-- /item -->
+
+
+							<div class="col-md-3 col-sm-3 mix development"><!-- item -->
+
+								<div class="item-box">
+									<figure>
+										<span class="item-hover">
+											<span class="overlay dark-5"></span>
+											<span class="inner">
+
+												<!-- lightbox -->
+												<a class="ico-rounded lightbox" href="demo_files/images/thematics/construction/w2-min.jpg" data-plugin-options='{"type":"image"}'>
+													<span class="fa fa-plus fs-20"></span>
+												</a>
+
+												<!-- details -->
+												<a class="ico-rounded lightbox" href="ajax/portfolio-detail-modal-6.html" data-plugin-options='{"type":"ajax", "closeOnBgClick":false}'>
+													<span class="glyphicon glyphicon-option-horizontal fs-20"></span>
+												</a>
+
+											</span>
+										</span>
+
+										<img class="img-fluid" src="demo_files/images/thematics/construction/w2-min.jpg" width="600" height="399" alt="">
+									</figure>
+
+									<div class="item-box-desc">
+										<h3>Speaker Design</h3>
+										<ul class="list-inline categories m-0">
+											<li><a href="#">Audio</a></li>
+											<li><a href="#">Design</a></li>
+										</ul>
+									</div>
+
+								</div>
+
+							</div><!-- /item -->
+
+
+							<div class="col-md-3 col-sm-3 mix photography"><!-- item -->
+
+								<div class="item-box">
+									<figure>
+										<span class="item-hover">
+											<span class="overlay dark-5"></span>
+											<span class="inner">
+
+												<!-- lightbox -->
+												<a class="ico-rounded lightbox" href="demo_files/images/thematics/construction/w3-min.jpg" data-plugin-options='{"type":"image"}'>
+													<span class="fa fa-plus fs-20"></span>
+												</a>
+
+												<!-- details -->
+												<a class="ico-rounded lightbox" href="ajax/portfolio-detail-modal-4.html" data-plugin-options='{"type":"ajax", "closeOnBgClick":false}'>
+													<span class="glyphicon glyphicon-option-horizontal fs-20"></span>
+												</a>
+
+											</span>
+										</span>
+
+										<img class="img-fluid" src="demo_files/images/thematics/construction/w3-min.jpg" width="600" height="399" alt="">
+									</figure>
+
+									<div class="item-box-desc">
+										<h3>Mobile Development</h3>
+										<ul class="list-inline categories m-0">
+											<li><a href="#">Development</a></li>
+											<li><a href="#">Design</a></li>
+										</ul>
+									</div>
+
+								</div>
+
+							</div><!-- /item -->
+
+
+							<div class="col-md-3 col-sm-3 mix design"><!-- item -->
+
+								<div class="item-box">
+									<figure>
+										<span class="item-hover">
+											<span class="overlay dark-5"></span>
+											<span class="inner">
+
+												<!-- lightbox -->
+												<a class="ico-rounded lightbox" href="demo_files/images/thematics/construction/w4-min.jpg" data-plugin-options='{"type":"image"}'>
+													<span class="fa fa-plus fs-20"></span>
+												</a>
+
+												<!-- details -->
+												<a class="ico-rounded" href="portfolio-single-slider.html">
+													<span class="glyphicon glyphicon-option-horizontal fs-20"></span>
+												</a>
+
+											</span>
+										</span>
+
+										<img class="img-fluid" src="demo_files/images/thematics/construction/w4-min.jpg" width="600" height="399" alt="">
+									</figure>
+
+									<div class="item-box-desc">
+										<h3>Nature Art</h3>
+										<ul class="list-inline categories m-0">
+											<li><a href="#">Nature</a></li>
+											<li><a href="#">Art</a></li>
+										</ul>
+									</div>
+
+								</div>
+
+							</div><!-- /item -->
+
+
+							<div class="col-md-3 col-sm-3 mix design"><!-- item -->
+
+								<div class="item-box">
+									<figure>
+										<span class="item-hover">
+											<span class="overlay dark-5"></span>
+											<span class="inner">
+
+												<!-- lightbox -->
+												<a class="ico-rounded lightbox" href="demo_files/images/thematics/construction/w5-min.jpg" data-plugin-options='{"type":"image"}'>
+													<span class="fa fa-plus fs-20"></span>
+												</a>
+
+												<!-- details -->
+												<a class="ico-rounded" href="portfolio-single-slider.html">
+													<span class="glyphicon glyphicon-option-horizontal fs-20"></span>
+												</a>
+
+											</span>
+										</span>
+
+										<img class="img-fluid" src="demo_files/images/thematics/construction/w5-min.jpg" width="600" height="399" alt="">
+									</figure>
+
+									<div class="item-box-desc">
+										<h3>Nature Art</h3>
+										<ul class="list-inline categories m-0">
+											<li><a href="#">Nature</a></li>
+											<li><a href="#">Art</a></li>
+										</ul>
+									</div>
+
+								</div>
+
+							</div><!-- /item -->
+
+
+							<div class="col-md-3 col-sm-3 mix photography"><!-- item -->
+
+								<div class="item-box">
+									<figure>
+										<span class="item-hover">
+											<span class="overlay dark-5"></span>
+											<span class="inner">
+
+												<!-- lightbox -->
+												<a class="ico-rounded lightbox" href="demo_files/images/thematics/construction/w6-min.jpg" data-plugin-options='{"type":"image"}'>
+													<span class="fa fa-plus fs-20"></span>
+												</a>
+
+												<!-- details -->
+												<a class="ico-rounded" href="portfolio-single-slider.html">
+													<span class="glyphicon glyphicon-option-horizontal fs-20"></span>
+												</a>
+
+											</span>
+										</span>
+
+										<img class="img-fluid" src="demo_files/images/thematics/construction/w6-min.jpg" width="600" height="399" alt="">
+									</figure>
+
+									<div class="item-box-desc">
+										<h3>Mobile Development</h3>
+										<ul class="list-inline categories m-0">
+											<li><a href="#">Development</a></li>
+											<li><a href="#">Design</a></li>
+										</ul>
+									</div>
+
+								</div>
+
+							</div><!-- /item -->
+
+
+							<div class="col-md-3 col-sm-3 mix design"><!-- item -->
+
+								<div class="item-box">
+									<figure>
+										<span class="item-hover">
+											<span class="overlay dark-5"></span>
+											<span class="inner">
+
+												<!-- lightbox -->
+												<a class="ico-rounded lightbox" href="demo_files/images/thematics/construction/w7-min.jpg" data-plugin-options='{"type":"image"}'>
+													<span class="fa fa-plus fs-20"></span>
+												</a>
+
+												<!-- details -->
+												<a class="ico-rounded" href="portfolio-single-slider.html">
+													<span class="glyphicon glyphicon-option-horizontal fs-20"></span>
+												</a>
+
+											</span>
+										</span>
+
+										<img class="img-fluid" src="demo_files/images/thematics/construction/w7-min.jpg" width="600" height="399" alt="">
+									</figure>
+
+									<div class="item-box-desc">
+										<h3>Nature Art</h3>
+										<ul class="list-inline categories m-0">
+											<li><a href="#">Nature</a></li>
+											<li><a href="#">Art</a></li>
+										</ul>
+									</div>
+
+								</div>
+
+							</div><!-- /item -->
+
+
+							<div class="col-md-3 col-sm-3 mix design"><!-- item -->
+
+								<div class="item-box">
+									<figure>
+										<span class="item-hover">
+											<span class="overlay dark-5"></span>
+											<span class="inner">
+
+												<!-- lightbox -->
+												<a class="ico-rounded lightbox" href="demo_files/images/thematics/construction/w8-min.jpg" data-plugin-options='{"type":"image"}'>
+													<span class="fa fa-plus fs-20"></span>
+												</a>
+
+												<!-- details -->
+												<a class="ico-rounded" href="portfolio-single-slider.html">
+													<span class="glyphicon glyphicon-option-horizontal fs-20"></span>
+												</a>
+
+											</span>
+										</span>
+
+										<img class="img-fluid" src="demo_files/images/thematics/construction/w8-min.jpg" width="600" height="399" alt="">
+									</figure>
+
+									<div class="item-box-desc">
+										<h3>Nature Art</h3>
+										<ul class="list-inline categories m-0">
+											<li><a href="#">Nature</a></li>
+											<li><a href="#">Art</a></li>
+										</ul>
+									</div>
+
+								</div>
+
+							</div><!-- /item -->
+
+
+						</div>
+
+
+				</div>
+			</section>
+			<!-- /PORTFOLIO -->
+			
+			<!-- Testimonials -->
+			<section class="section-xs dark">
+				<div class="container">
+                    
+                    <div class="heading-title heading-dotted text-center">
+						    <h2>NOTRE EQUIPE</h2>
+                    </div>
+
+					<div class="owl-carousel text-center owl-testimonial m-0" data-plugin-options='{"singleItem": true, "autoPlay": 3500, "navigation": false, "pagination": true, "transitionStyle":"fade"}'>
+						<div class="testimonial">
+							<figure>
+								<img class="rounded" src="demo_files/images/people/300x300/11-min.jpg" alt="" />
+							</figure>
+							<div class="testimonial-content p-0">
+								<p class="lead">Incidunt deleniti blanditiis quas aperiam recusandae consequatur ullam quibusdam cum libero.</p>
+								<cite>
+									Joana Doe
+									<span>Company Ltd.</span>
+								</cite>
+							</div>
+						</div>
+						<div class="testimonial">
+							<figure>
+								<img class="rounded" src="demo_files/images/people/300x300/12-min.jpg" alt="" />
+							</figure>
+							<div class="testimonial-content p-0">
+								<p class="lead">Quod necessitatibus quis expedita harum provident eos obcaecati id culpa.</p>
+								<cite>
+									Melissa Doe
+									<span>Company Ltd.</span>
+								</cite>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</section>
+			<!-- /Testimonials -->
+
 			
 			
-			<!-- BUTTON CALLOUT -->
-			<a href="#" class="btn btn-xlg btn-primary fs-20 fullwidth m-0 rad-0 p-40">
-				<span class="font-lato fs-30">
-					Did Smarty convinced you? 
-					<strong>Contact us &raquo;</strong>
-				</span>
-			</a>
-			<!-- /BUTTON CALLOUT -->
 
 
 			
@@ -537,10 +956,8 @@
 				<div class="container">
 
 					<div class="text-center">
-						<h2 class="fs-40 fw-300">Contractor &amp; Construction Since 1982</h2>
-						<a class="btn btn-default btn-lg" href="#">GET A QUOTE <i class="fa fa-angle-right"></i></a> 
-						&nbsp; OR &nbsp; 
-						<a class="btn btn-warning btn-lg" href="#">OUR SERVICES <i class="fa fa-angle-right"></i></a>
+						<h2 class="fs-40 fw-300">The company has been in business since 1976</h2>
+						<a class="btn btn-default btn-lg" href="pack-realestate-mortgage-calc.html">REQUEST A QUOTE <i class="fa fa-angle-right"></i></a> 
 					</div>
 
 				</div>
@@ -1153,13 +1570,13 @@
 				<div class="container">
 
 					<div class="heading-title heading-dotted text-center">
-						<h2>Our Clients</h2>
+						<h2>NOS CLIENTS</h2>
 					</div>
 
 					<ul class="row clients-dotted list-inline">
 						<li class="col-md-3 col-sm-3 col-6">
 							<a href="#">
-								<img class="img-fluid" src="demo_files/images/brands/1.jpg" alt="client" />
+								<img class="img-fluid" src="demo_files/images/brands/coveo.png" alt="client" />
 							</a>
 						</li>
 						<li class="col-md-3 col-sm-3 col-6">
@@ -1458,7 +1875,7 @@
 		<script src="assets/js/scripts.js"></script>
 		
 		<!-- STYLESWITCHER - REMOVE -->
-		<script async src="demo_files/styleswitcher/styleswitcher.js"></script>
+<!--		<script async src="demo_files/styleswitcher/styleswitcher.js"></script> -->
 
 		<!-- REVOLUTION SLIDER -->
 		<script src="assets/plugins/slider.revolution/js/jquery.themepunch.tools.min.js"></script>
