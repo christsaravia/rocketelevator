@@ -54,6 +54,14 @@
                 border-left-color: #222;
                 right:0;
             }
+            @media (max-width:767px){
+                #ruban {
+                    max-width: 90%;
+                }
+                #jobba a{
+                    font-size: 6px;
+                }
+            }
         </style>
         
 		<meta name="description" content="" />
@@ -104,49 +112,7 @@
 		data-background="assets/images/_smarty/boxed_background/1.jpg"
 	-->
 	<body class="smoothscroll enable-animation">
-
-		<!-- SLIDE TOP -->
-		<div id="slidetop">
-
-			<div class="container">
-				
-				<div class="row">
-
-					<div class="col-md-4">
-						<h6><i class="icon-heart"></i> WHY SMARTY?</h6>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus nulla, commodo a sodales sed, dignissim pretium nunc. Nam et lacus neque. Ut enim massa, sodales tempor convallis et, iaculis ac massa. </p>
-					</div>
-
-					<div class="col-md-4">
-						<h6><i class="fa-facheck"></i> RECENTLY VISITED</h6>
-						<ul class="list-unstyled">
-							<li><a href="#"><i class="fa fa-angle-right"></i> Consectetur adipiscing elit amet</a></li>
-							<li><a href="#"><i class="fa fa-angle-right"></i> This is a very long text, very very very very very very very very very very very very </a></li>
-							<li><a href="#"><i class="fa fa-angle-right"></i> Lorem ipsum dolor sit amet</a></li>
-							<li><a href="#"><i class="fa fa-angle-right"></i> Dolor sit amet,consectetur adipiscing elit amet</a></li>
-							<li><a href="#"><i class="fa fa-angle-right"></i> Consectetur adipiscing elit amet,consectetur adipiscing elit</a></li>
-						</ul>
-					</div>
-
-					<div class="col-md-4">
-						<h6><i class="icon-envelope"></i> CONTACT INFO</h6>
-						<ul class="list-unstyled">
-							<li><b>Address:</b> PO Box 21132, Here Weare St, <br /> Melbourne, Vivas 2355 Australia</li>
-							<li><b>Phone:</b> 1-800-565-2390</li>
-							<li><b>Email:</b> <a href="mailto:support@yourname.com">support@yourname.com</a></li>
-						</ul>
-					</div>
-
-				</div>
-
-			</div>
-
-			<a class="slidetop-toggle" href="#"><!-- toggle button --></a>
-
-		</div>
-		<!-- /SLIDE TOP -->
-
-
+	
 		<!-- wrapper -->
 		<div id="wrapper">
 
@@ -180,7 +146,7 @@
 
 				<!-- TOP NAV -->
 				<header id="topNav">
-					<div class="container">
+					<div class="container-fluid">
 
 						<!-- Mobile Menu Button -->
 						<button class="btn btn-mobile" data-toggle="collapse" data-target=".nav-main-collapse">
@@ -208,10 +174,10 @@
 									Add .external for an external link!
 								-->
 								<ul id="topMain" class="nav nav-pills nav-main nav-onepage">
-									<li class="active"><!-- HOME -->
-										<a href="#home">
-                                        <!-- Je dois mettre dans une page externe mon css. Attention! Il faut changer le background pour que la maison soit visible lorsque quelqu'un consulte la page sur un mobile -->
-										    <img src="image/house.png" alt="HOME"  width="40"> 
+									
+									<li><!-- HOME -->
+										<a href="#">
+										   <img src="image/house.png" alt="HOME"  width="40">
 										</a>
 									</li>
 									<li><!-- SERVICES -->
@@ -257,8 +223,6 @@
 
 			</div>
 
-
-
 			<!-- REVOLUTION SLIDER -->
 			<div class="slider fullwidthbanner-container roundedcorners">
 				<!--
@@ -289,13 +253,13 @@
 						data-height="750"
 						data-height="800"
 				-->
-				<div class="fullwidthbanner" data-height="600" data-shadow="3" data-navigationStyle="preview2">
+				<div class="fullwidthbanner" data-height="600" data-shadow="3" data-navigationStyle="preview4">
 					<ul class="hide">
 					
 						<!-- SLIDE  -->
-						<li data-transition="parallaxtobottom" data-slotamount="7" data-masterspeed="300"  data-saveperformance="off"  data-title="Hola">
+						<li data-transition="parallaxtobottom" data-slotamount="7" data-masterspeed="600"  data-saveperformance="off">
 							<!-- MAIN IMAGE -->
-							<img src="demo_files/images/thematics/construction/AdobeStock_122227340.jpeg"  alt="cover image"  data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
+							<img src="demo_files/images/thematics/construction/AdobeStock_122227340.jpeg"  alt="cover image"  data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat" class="img-fluid">
 
 							<div class="tp-caption white_big skewfromleft tp-resizeme"
 								data-x="471"
@@ -375,9 +339,9 @@
 						</li>
 
 						<!-- SLIDE  -->
-						<li data-transition="parallaxtotop" data-slotamount="7" data-masterspeed="300"  data-saveperformance="off" data-title=" Immeubles résidentiels">
+						<li data-transition="parallaxtotop" data-slotamount="7" data-masterspeed="600"  data-saveperformance="off">
 							<!-- MAIN IMAGE -->
-							<img src="demo_files/images/thematics/construction/AdobeStock_122227340.jpeg" alt="cover image"  data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
+							<img src="demo_files/images/thematics/construction/AdobeStock_122227340.jpeg" alt="cover image"  data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat" class="img-fluid">
 
 							<div class="overlay dark-0"><!-- dark overlay [0 to 9 opacity] --></div>
 
@@ -427,29 +391,12 @@
 								style="z-index: 4; max-width: auto;">
 									<a class="btn btn-warning btn-lg" href="#">OUR SERVICES &nbsp; <i class="fa fa-angle-right"></i></a>
 							</div>
-<!--
-							<div class="tp-caption sfb tp-resizeme"
-								data-x="250"
-								data-y="410" 
-								data-speed="500"
-								data-start="1500"
-								data-easing="Power3.easeInOut"
-								data-splitin="none"
-								data-splitout="none"
-								data-elementdelay="0.1"
-								data-endelementdelay="0.1"
-								data-endspeed="500"
-								style="z-index: 6; max-width: auto; max-height: auto; white-space: nowrap;">
-									<a class="btn btn-default btn-lg" href="#">GET A QUOTE &nbsp; <i class="fa fa-angle-right"></i></a>
-							</div>
--->
-							
 						</li>
 
 						<!-- SLIDE  -->
-						<li data-transition="parallaxtobottom" data-slotamount="7" data-masterspeed="600"  data-saveperformance="off"  data-title="hello">
+						<li data-transition="parallaxtobottom" data-slotamount="7" data-masterspeed="600"  data-saveperformance="off">
 							<!-- MAIN IMAGE -->
-							<img src="demo_files/images/mdl-blue-min.jpg"  alt="cover image"  data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
+							<img src="demo_files/images/mdl-blue-min.jpg"  alt="cover image"  data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat" class="img-fluid">
 
 							<div class="tp-caption white_big skewfromleft tp-resizeme"
 								data-x="471"
@@ -512,24 +459,128 @@
 									<a class="btn btn-warning btn-lg" href="#">NOS SERVICES &nbsp; <i class="fa fa-angle-right"></i></a>
 							</div>
 						</li> 
-
 					</ul>
-
 				</div>
 			</div>
 			<!-- /REVOLUTION SLIDER -->
 
 
-			<hr class="m-0" /><!-- 1px line separator -->
+			<hr class="m-5" /><!-- 1px line separator -->
+
+                    
+ <!--
+                         <div class="container mt-50">
+                   <div class="accordian" id="accordianExample">
+                      
+                       <div class="card">
+                           <div class="card-header" id="headingOne">
+                               <h5 class="mb-0">
+                                   <button class="btn btn-link" type="button"  data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                   REWARD & PROJECT
+                                   </button>
+                               </h5>
+                           </div>
+                           <div id="collapseOne" class="collapse show" aria-lebelledby="headingOne" data-parent="#accordianExample">                       
+                               <div class="card-body">
+                                    <div class="container" id="ruban">
+                                        <nav id="jobba">
+                                            <a href="#work">REWARD & PROJECT</a>
+                                            <a href="#service">RESIDENTIAL BUILDINGS</a>
+                                            <a href="#service">CORPORATE BUILDINGS</a>
+                                        </nav>        
+                                    </div>
+                               </div>         
+                           </div>
+                       </div>
+                       
+                       <div class="card">
+                           <div class="card-header" id="headingTwo">
+                               <h5 class="mb-0">                               
+                                  <button class="btn btn-link collapsed" type="button"  data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                   RESIDENTIAL BUILDINGS
+                                   </button>
+                               </h5>
+                           </div>
+                           <div id="collapseTwo" class="collapse" aria-lebelledby="headingTwo" data-parent="#accordianExample">                           
+                               <div class="card-body">
+                                   &ldquo;Je suis le meilleur joueur de poker du monde&rsquo;ddjsjdsjfjs&rsquo; djsjdsjd &ldquo;dajsdjdjsjdajsjjdsj,dsajjdsajd,dsajdsj&rsquo;djjsajds&rdquo;<br><em>adjjdsajdasjsjd</em>
+                               </div>
+                           </div>
+                       </div>
+                       
+                       <div class="card">
+                           <div class="card-header" id="headingThree">
+                               <h5 class="mb-0">                              
+                                  <button class="btn btn-link collapsed" type="button"  data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                   CORPORATE BUILDINGS
+                                   </button>
+                               </h5>
+                           </div>
+                           <div id="collapseThree" class="collapse" aria-lebelledby="headingThree" data-parent="#accordianExample">
+                               <div class="card-body">
+                                   &ldquo;Je suis le meilleur joueur de poker du monde&rsquo;ddjsjdsjfjs&rsquo; djsjdsjd &ldquo;dajsdjdjsjdajsjjdsj,dsajjdsajd,dsajdsj&rsquo;djjsajds&rdquo;<br><em>adjjdsajdasjsjd</em>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           -->
+           
+      
             <div class="container" id="ruban">
                 <nav id="jobba">
-                    <a href="#">REWARD & PROJECT</a>
-                    <a href="#">service for residential buildings</a>
-                    <a href="#">service for corporate buildings</a>
+                    <a href="#work">REWARD & PROJECT</a>
+                    <a href="#services">RESIDENTIAL BUILDINGS</a>
+                    <a href="#services">CORPORATE BUILDINGS</a>
                 </nav>        
             </div>
-            
-            <hr class="m-0" /><!-- 1px line separator -->
+       
+            <!-- Services -->
+
+				<div class="container">
+                    <section id="services">    
+                    <div class="heading-title heading-dotted text-center">
+				        <h2>SERVICES</h2>
+                    </div>
+
+					<div class="row">
+						<div class="col-sm-4">
+							<a class="image-hover lightbox" href="https://vimeo.com/ondemand/buildingwithawareness/108669033" data-plugin-options='{"type":"iframe"}'>
+								<span class="image-hover-icon image-hover-dark"><!-- image-hover-light | image-hover-dark -->
+									<i class="fa fa-vimeo-square"><!-- video icon --></i>
+								</span>
+								<img class="img-fluid" src="demo_files/images/thematics/construction/c3-min.jpg" alt="img" />
+							</a>
+
+							<h3 class="mt-10">The Green Building</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus nulla, commodo a sodales sed, dignissim pretium nunc. Nam et lacus neque.</p>
+							<a href="#" class="btn btn-default">THE BENEFITS</a>
+						</div>
+
+						<div class="col-sm-4">
+							<a class="image-hover lightbox" href="https://www.youtube.com/watch?v=ZhCyoDlltbo" data-plugin-options='{"type":"iframe"}'>
+								<span class="image-hover-icon image-hover-dark"><!-- image-hover-light | image-hover-dark -->
+									<i class="fa fa-youtube-square"><!-- video icon --></i>
+								</span>
+								<img class="img-fluid" src="demo_files/images/thematics/construction/c1-min.jpg" alt="img" />
+							</a>
+							<h3 class="mt-10">Best House Renovation</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus nulla, commodo a sodales sed, dignissim pretium nunc. Nam et lacus neque.</p>
+							<a href="#" class="btn btn-default">READ MORE</a>
+						</div>
+
+						<div class="col-sm-4">
+							<img class="img-fluid" src="demo_files/images/thematics/construction/c2-min.jpg" alt="img" />
+							<h3 class="mt-10">The Effective Teamwork</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus nulla, commodo a sodales sed, dignissim pretium nunc. Nam et lacus neque.</p>
+							<a href="#" class="btn btn-default">READ MORE</a>
+						</div>
+
+					</div>
+				    </section>
+				</div>
+	
+			<!-- /Services -->
             
 
             
@@ -870,13 +921,13 @@
 					<div class="owl-carousel text-center owl-testimonial m-0" data-plugin-options='{"singleItem": true, "autoPlay": 3500, "navigation": false, "pagination": true, "transitionStyle":"fade"}'>
 						<div class="testimonial">
 							<figure>
-								<img class="rounded" src="demo_files/images/people/300x300/11-min.jpg" alt="" />
+								<img class="rounded" src="demo_files/images/people/300x300/mathieu_lortie.jpg" alt="" />
 							</figure>
 							<div class="testimonial-content p-0">
 								<p class="lead">Incidunt deleniti blanditiis quas aperiam recusandae consequatur ullam quibusdam cum libero.</p>
 								<cite>
-									Joana Doe
-									<span>Company Ltd.</span>
+									Mathieu Lortie
+									<span>CEO</span>
 								</cite>
 							</div>
 						</div>
@@ -887,8 +938,8 @@
 							<div class="testimonial-content p-0">
 								<p class="lead">Quod necessitatibus quis expedita harum provident eos obcaecati id culpa.</p>
 								<cite>
-									Melissa Doe
-									<span>Company Ltd.</span>
+									Christ Saravia Ramirez
+									<span>ROOKIE OF THE YEAR</span>
 								</cite>
 							</div>
 						</div>
@@ -898,444 +949,7 @@
 			</section>
 			<!-- /Testimonials -->
 
-			
-			
-
-
-			
-			<!-- Services -->
-			<section id="services">
-				<div class="container">
-
-					<div class="row">
-						<div class="col-sm-4">
-							<a class="image-hover lightbox" href="https://vimeo.com/ondemand/buildingwithawareness/108669033" data-plugin-options='{"type":"iframe"}'>
-								<span class="image-hover-icon image-hover-dark"><!-- image-hover-light | image-hover-dark -->
-									<i class="fa fa-vimeo-square"><!-- video icon --></i>
-								</span>
-								<img class="img-fluid" src="demo_files/images/thematics/construction/c3-min.jpg" alt="img" />
-							</a>
-
-							<h3 class="mt-10">The Green Building</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus nulla, commodo a sodales sed, dignissim pretium nunc. Nam et lacus neque.</p>
-							<a href="#" class="btn btn-default">THE BENEFITS</a>
-						</div>
-
-						<div class="col-sm-4">
-							<a class="image-hover lightbox" href="https://www.youtube.com/watch?v=ZhCyoDlltbo" data-plugin-options='{"type":"iframe"}'>
-								<span class="image-hover-icon image-hover-dark"><!-- image-hover-light | image-hover-dark -->
-									<i class="fa fa-youtube-square"><!-- video icon --></i>
-								</span>
-								<img class="img-fluid" src="demo_files/images/thematics/construction/c1-min.jpg" alt="img" />
-							</a>
-							<h3 class="mt-10">Best House Renovation</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus nulla, commodo a sodales sed, dignissim pretium nunc. Nam et lacus neque.</p>
-							<a href="#" class="btn btn-default">READ MORE</a>
-						</div>
-
-						<div class="col-sm-4">
-							<img class="img-fluid" src="demo_files/images/thematics/construction/c2-min.jpg" alt="img" />
-							<h3 class="mt-10">The Effective Teamwork</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus nulla, commodo a sodales sed, dignissim pretium nunc. Nam et lacus neque.</p>
-							<a href="#" class="btn btn-default">READ MORE</a>
-						</div>
-
-					</div>
-
-				</div>
-			</section>
-			<!-- /Services -->
-
-			
-
-
-			<!-- Parallax -->
-			<section class="parallax parallax-1" style="background-image: url('demo_files/images/1200x800/M.jpg');">
-				<div class="overlay dark-5"><!-- dark overlay [1 to 9 opacity] --></div>
-
-				<div class="container">
-
-					<div class="text-center">
-						<h2 class="fs-40 fw-300">The company has been in business since 1976</h2>
-						<a class="btn btn-default btn-lg" href="pack-realestate-mortgage-calc.html">REQUEST A QUOTE <i class="fa fa-angle-right"></i></a> 
-					</div>
-
-				</div>
-			</section>
-			<!-- /Parallax -->
-
-
-
-
-			<!-- PORTFOLIO -->
-			<section id="work">
-				<div class="container">
-
-					<div class="heading-title heading-dotted text-center">
-						<h2>Featured Work</h2>
-					</div>
-
-					<div class="text-center">
-						<ul class="nav nav-pills mix-filter mb-60">
-							<li data-filter="all" class="filter active"><a href="#">All</a></li>
-							<li data-filter="development" class="filter"><a href="#">Development</a></li>
-							<li data-filter="photography" class="filter"><a href="#">Photography</a></li>
-							<li data-filter="design" class="filter"><a href="#">Design</a></li>
-						</ul>
-					</div>
-
-				</div>
-
-				<div id="portfolio" class="portfolio-nogutter">
-
-						<div class="row mix-grid">
-
-							<div class="col-md-3 col-sm-3 mix design"><!-- item -->
-
-								<div class="item-box">
-									<figure>
-										<span class="item-hover">
-											<span class="overlay dark-5"></span>
-											<span class="inner">
-
-												<!-- lightbox -->
-												<a class="ico-rounded lightbox" href="demo_files/images/thematics/construction/w1-min.jpg" data-plugin-options='{"type":"image"}'>
-													<span class="fa fa-plus fs-20"></span>
-												</a>
-
-												<!-- details -->
-												<a class="ico-rounded lightbox" href="ajax/portfolio-detail-modal-6.html" data-plugin-options='{"type":"ajax", "closeOnBgClick":false}'>
-													<span class="glyphicon glyphicon-option-horizontal fs-20"></span>
-												</a>
-
-											</span>
-										</span>
-
-										<img class="img-fluid" src="demo_files/images/thematics/construction/w1-min.jpg" width="600" height="399" alt="">
-									</figure>
-
-									<div class="item-box-desc">
-										<h3>Architect Project</h3>
-										<ul class="list-inline categories m-0">
-											<li><a href="#">Architecture</a></li>
-											<li><a href="#">Design</a></li>
-										</ul>
-									</div>
-
-								</div>
-
-							</div><!-- /item -->
-
-
-							<div class="col-md-3 col-sm-3 mix development"><!-- item -->
-
-								<div class="item-box">
-									<figure>
-										<span class="item-hover">
-											<span class="overlay dark-5"></span>
-											<span class="inner">
-
-												<!-- lightbox -->
-												<a class="ico-rounded lightbox" href="demo_files/images/thematics/construction/w2-min.jpg" data-plugin-options='{"type":"image"}'>
-													<span class="fa fa-plus fs-20"></span>
-												</a>
-
-												<!-- details -->
-												<a class="ico-rounded lightbox" href="ajax/portfolio-detail-modal-6.html" data-plugin-options='{"type":"ajax", "closeOnBgClick":false}'>
-													<span class="glyphicon glyphicon-option-horizontal fs-20"></span>
-												</a>
-
-											</span>
-										</span>
-
-										<img class="img-fluid" src="demo_files/images/thematics/construction/w2-min.jpg" width="600" height="399" alt="">
-									</figure>
-
-									<div class="item-box-desc">
-										<h3>Speaker Design</h3>
-										<ul class="list-inline categories m-0">
-											<li><a href="#">Audio</a></li>
-											<li><a href="#">Design</a></li>
-										</ul>
-									</div>
-
-								</div>
-
-							</div><!-- /item -->
-
-
-							<div class="col-md-3 col-sm-3 mix photography"><!-- item -->
-
-								<div class="item-box">
-									<figure>
-										<span class="item-hover">
-											<span class="overlay dark-5"></span>
-											<span class="inner">
-
-												<!-- lightbox -->
-												<a class="ico-rounded lightbox" href="demo_files/images/thematics/construction/w3-min.jpg" data-plugin-options='{"type":"image"}'>
-													<span class="fa fa-plus fs-20"></span>
-												</a>
-
-												<!-- details -->
-												<a class="ico-rounded lightbox" href="ajax/portfolio-detail-modal-4.html" data-plugin-options='{"type":"ajax", "closeOnBgClick":false}'>
-													<span class="glyphicon glyphicon-option-horizontal fs-20"></span>
-												</a>
-
-											</span>
-										</span>
-
-										<img class="img-fluid" src="demo_files/images/thematics/construction/w3-min.jpg" width="600" height="399" alt="">
-									</figure>
-
-									<div class="item-box-desc">
-										<h3>Mobile Development</h3>
-										<ul class="list-inline categories m-0">
-											<li><a href="#">Development</a></li>
-											<li><a href="#">Design</a></li>
-										</ul>
-									</div>
-
-								</div>
-
-							</div><!-- /item -->
-
-
-							<div class="col-md-3 col-sm-3 mix design"><!-- item -->
-
-								<div class="item-box">
-									<figure>
-										<span class="item-hover">
-											<span class="overlay dark-5"></span>
-											<span class="inner">
-
-												<!-- lightbox -->
-												<a class="ico-rounded lightbox" href="demo_files/images/thematics/construction/w4-min.jpg" data-plugin-options='{"type":"image"}'>
-													<span class="fa fa-plus fs-20"></span>
-												</a>
-
-												<!-- details -->
-												<a class="ico-rounded" href="portfolio-single-slider.html">
-													<span class="glyphicon glyphicon-option-horizontal fs-20"></span>
-												</a>
-
-											</span>
-										</span>
-
-										<img class="img-fluid" src="demo_files/images/thematics/construction/w4-min.jpg" width="600" height="399" alt="">
-									</figure>
-
-									<div class="item-box-desc">
-										<h3>Nature Art</h3>
-										<ul class="list-inline categories m-0">
-											<li><a href="#">Nature</a></li>
-											<li><a href="#">Art</a></li>
-										</ul>
-									</div>
-
-								</div>
-
-							</div><!-- /item -->
-
-
-							<div class="col-md-3 col-sm-3 mix design"><!-- item -->
-
-								<div class="item-box">
-									<figure>
-										<span class="item-hover">
-											<span class="overlay dark-5"></span>
-											<span class="inner">
-
-												<!-- lightbox -->
-												<a class="ico-rounded lightbox" href="demo_files/images/thematics/construction/w5-min.jpg" data-plugin-options='{"type":"image"}'>
-													<span class="fa fa-plus fs-20"></span>
-												</a>
-
-												<!-- details -->
-												<a class="ico-rounded" href="portfolio-single-slider.html">
-													<span class="glyphicon glyphicon-option-horizontal fs-20"></span>
-												</a>
-
-											</span>
-										</span>
-
-										<img class="img-fluid" src="demo_files/images/thematics/construction/w5-min.jpg" width="600" height="399" alt="">
-									</figure>
-
-									<div class="item-box-desc">
-										<h3>Nature Art</h3>
-										<ul class="list-inline categories m-0">
-											<li><a href="#">Nature</a></li>
-											<li><a href="#">Art</a></li>
-										</ul>
-									</div>
-
-								</div>
-
-							</div><!-- /item -->
-
-
-							<div class="col-md-3 col-sm-3 mix photography"><!-- item -->
-
-								<div class="item-box">
-									<figure>
-										<span class="item-hover">
-											<span class="overlay dark-5"></span>
-											<span class="inner">
-
-												<!-- lightbox -->
-												<a class="ico-rounded lightbox" href="demo_files/images/thematics/construction/w6-min.jpg" data-plugin-options='{"type":"image"}'>
-													<span class="fa fa-plus fs-20"></span>
-												</a>
-
-												<!-- details -->
-												<a class="ico-rounded" href="portfolio-single-slider.html">
-													<span class="glyphicon glyphicon-option-horizontal fs-20"></span>
-												</a>
-
-											</span>
-										</span>
-
-										<img class="img-fluid" src="demo_files/images/thematics/construction/w6-min.jpg" width="600" height="399" alt="">
-									</figure>
-
-									<div class="item-box-desc">
-										<h3>Mobile Development</h3>
-										<ul class="list-inline categories m-0">
-											<li><a href="#">Development</a></li>
-											<li><a href="#">Design</a></li>
-										</ul>
-									</div>
-
-								</div>
-
-							</div><!-- /item -->
-
-
-							<div class="col-md-3 col-sm-3 mix design"><!-- item -->
-
-								<div class="item-box">
-									<figure>
-										<span class="item-hover">
-											<span class="overlay dark-5"></span>
-											<span class="inner">
-
-												<!-- lightbox -->
-												<a class="ico-rounded lightbox" href="demo_files/images/thematics/construction/w7-min.jpg" data-plugin-options='{"type":"image"}'>
-													<span class="fa fa-plus fs-20"></span>
-												</a>
-
-												<!-- details -->
-												<a class="ico-rounded" href="portfolio-single-slider.html">
-													<span class="glyphicon glyphicon-option-horizontal fs-20"></span>
-												</a>
-
-											</span>
-										</span>
-
-										<img class="img-fluid" src="demo_files/images/thematics/construction/w7-min.jpg" width="600" height="399" alt="">
-									</figure>
-
-									<div class="item-box-desc">
-										<h3>Nature Art</h3>
-										<ul class="list-inline categories m-0">
-											<li><a href="#">Nature</a></li>
-											<li><a href="#">Art</a></li>
-										</ul>
-									</div>
-
-								</div>
-
-							</div><!-- /item -->
-
-
-							<div class="col-md-3 col-sm-3 mix design"><!-- item -->
-
-								<div class="item-box">
-									<figure>
-										<span class="item-hover">
-											<span class="overlay dark-5"></span>
-											<span class="inner">
-
-												<!-- lightbox -->
-												<a class="ico-rounded lightbox" href="demo_files/images/thematics/construction/w8-min.jpg" data-plugin-options='{"type":"image"}'>
-													<span class="fa fa-plus fs-20"></span>
-												</a>
-
-												<!-- details -->
-												<a class="ico-rounded" href="portfolio-single-slider.html">
-													<span class="glyphicon glyphicon-option-horizontal fs-20"></span>
-												</a>
-
-											</span>
-										</span>
-
-										<img class="img-fluid" src="demo_files/images/thematics/construction/w8-min.jpg" width="600" height="399" alt="">
-									</figure>
-
-									<div class="item-box-desc">
-										<h3>Nature Art</h3>
-										<ul class="list-inline categories m-0">
-											<li><a href="#">Nature</a></li>
-											<li><a href="#">Art</a></li>
-										</ul>
-									</div>
-
-								</div>
-
-							</div><!-- /item -->
-
-
-						</div>
-
-
-				</div>
-			</section>
-			<!-- /PORTFOLIO -->
-
-
-
-
-			<!-- Testimonials -->
-			<section class="section-xs dark">
-				<div class="container">
-
-					<div class="owl-carousel text-center owl-testimonial m-0" data-plugin-options='{"singleItem": true, "autoPlay": 3500, "navigation": false, "pagination": true, "transitionStyle":"fade"}'>
-						<div class="testimonial">
-							<figure>
-								<img class="rounded" src="demo_files/images/people/300x300/11-min.jpg" alt="" />
-							</figure>
-							<div class="testimonial-content p-0">
-								<p class="lead">Incidunt deleniti blanditiis quas aperiam recusandae consequatur ullam quibusdam cum libero.</p>
-								<cite>
-									Joana Doe
-									<span>Company Ltd.</span>
-								</cite>
-							</div>
-						</div>
-						<div class="testimonial">
-							<figure>
-								<img class="rounded" src="demo_files/images/people/300x300/12-min.jpg" alt="" />
-							</figure>
-							<div class="testimonial-content p-0">
-								<p class="lead">Quod necessitatibus quis expedita harum provident eos obcaecati id culpa.</p>
-								<cite>
-									Melissa Doe
-									<span>Company Ltd.</span>
-								</cite>
-							</div>
-						</div>
-					</div>
-
-				</div>
-			</section>
-			<!-- /Testimonials -->
-
-
-
-
-
-			<!-- News -->
+            <!-- News -->
 			<section id="news">
 				<div class="container">
 
@@ -1524,9 +1138,26 @@
 				</div>
 			</section>
 			<!-- /News -->
+			
+			
+			<!-- Parallax -->
+			<section class="parallax parallax-1" style="background-image: url('demo_files/images/1200x800/M.jpg');">
+				<div class="overlay dark-5"><!-- dark overlay [1 to 9 opacity] --></div>
 
+				<div class="container">
 
+					<div class="text-center">
+						<h2 class="fs-40 fw-300">The company has been in business since 1976</h2>
+						<a class="btn btn-warning btn-lg" href="pack-realestate-mortgage-calc.html">REQUEST A QUOTE &nbsp;<i class="fa fa-angle-right"></i>
+						
+						<a class="btn btn-warning btn-lg" href="#service">OUR SERVICES <i class="fa fa-angle-right"></i></a>
+						</a> 
+					</div>
 
+				</div>
+			</section>
+			<!-- /Parallax -->
+			
 
 			<!-- Overview -->
 			<section id="overview">

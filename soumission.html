@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Formulaire</title>
+		<link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon" />  
+		<meta name="description" content="" />
+		<meta name="Author" content="Dorin Grigoras [www.stepofweb.com]" />
+
+		<!-- mobile settings -->
+		<meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0" />
+		<!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+
+		<!-- WEB FONTS : use %7C instead of | (pipe) -->
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600%7CRaleway:300,400,500,600,700%7CLato:300,400,400italic,600,700" rel="stylesheet" type="text/css" />
+
+		<!-- CORE CSS -->
+		<link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+		
+		<!-- REVOLUTION SLIDER -->
+		<link href="assets/plugins/slider.revolution/css/extralayers.css" rel="stylesheet" type="text/css" />
+		<link href="assets/plugins/slider.revolution/css/settings.css" rel="stylesheet" type="text/css" />
+
+		<!-- THEME CSS -->
+		<link href="assets/css/essentials.css" rel="stylesheet" type="text/css" />
+		<link href="assets/css/layout.css" rel="stylesheet" type="text/css" />
+
+		<!-- PAGE LEVEL SCRIPTS -->
+		<link href="assets/css/header-1.css" rel="stylesheet" type="text/css" />
+		<link href="assets/css/color_scheme/yellow.css" rel="stylesheet" type="text/css" id="color_scheme" />
+		
+		<style>
+  div {
+    color: red;
+  }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+	</head>
+
+	<!--
+		AVAILABLE BODY CLASSES:
+		
+		smoothscroll 			= create a browser smooth scroll
+		enable-animation		= enable WOW animations
+
+		bg-grey					= grey background
+		grain-grey				= grey grain background
+		grain-blue				= blue grain background
+		grain-green				= green grain background
+		grain-blue				= blue grain background
+		grain-orange			= orange grain background
+		grain-yellow			= yellow grain background
+		
+		boxed 					= boxed layout
+		pattern1 ... patern11	= pattern background
+		menu-vertical-hide		= hidden, open on click
+		
+		BACKGROUND IMAGE [together with .boxed class]
+		data-background="assets/images/_smarty/boxed_background/1.jpg"
+	-->
+	<body>
+	
+		<!-- wrapper -->
+		<div id="wrapper">
+
+			<!-- 
+				AVAILABLE HEADER CLASSES
+
+				Default nav height: 96px
+				.header-md 		= 70px nav height
+				.header-sm 		= 60px nav height
+
+				.b-0 		= remove bottom border (only with transparent use)
+				.transparent	= transparent header
+				.translucent	= translucent header
+				.sticky			= sticky header
+				.static			= static header
+				.dark			= dark header
+				.bottom			= header on bottom
+				
+				shadow-before-1 = shadow 1 header top
+				shadow-after-1 	= shadow 1 header bottom
+				shadow-before-2 = shadow 2 header top
+				shadow-after-2 	= shadow 2 header bottom
+				shadow-before-3 = shadow 3 header top
+				shadow-after-3 	= shadow 3 header bottom
+
+				.clearfix		= required for mobile menu, do not remove!
+
+				Example Usage:  class="clearfix sticky header-sm transparent b-0"
+			-->
+			<div id="header" class="navbar-toggleable-md sticky header-md clearfix">
+
+				<!-- TOP NAV -->
+				<header id="topNav">
+					<div class="container-fluid">
+
+						<!-- Mobile Menu Button -->
+						<button class="btn btn-mobile" data-toggle="collapse" data-target=".nav-main-collapse">
+							<i class="fa fa-bars"></i>
+						</button>
+
+						<!-- Logo -->
+						<a class="logo float-left scrollTo" href="index-onepage-construction.html">
+							<img src="assets/images/_smarty/R2.png" alt="LOGO" />
+						</a>
+
+						<!-- 
+							Top Nav 
+							
+							AVAILABLE CLASSES:
+							submenu-dark = dark sub menu
+						-->
+						<div class="navbar-collapse collapse float-right nav-main-collapse submenu-dark">
+							<nav class="nav-main">
+
+								<!-- 
+									.nav-onepage
+									Required for onepage navigation links
+									
+									Add .external for an external link!
+								-->
+								<ul id="topMain" class="nav nav-pills nav-main nav-onepage">
+									
+									<li><!-- HOME -->
+										<a href="#">
+										   <img src="image/house.png" alt="HOME"  width="40">
+										</a>
+									</li>
+									<li><!-- SERVICES -->
+										<a href="#services">
+											SERVICES
+										</a>
+									</li>
+									<li><!-- WORK -->
+										<a href="#work">
+											PORTFOLIO
+										</a>
+									</li>
+									</li>
+									<li><!-- NEWS -->
+										<a href="#news">
+										    COMMERCIAL
+										</a>
+									</li>
+					
+                                    <li><!-- OVERVIEW -->
+										<a href="#overview">
+											NEWS
+										</a>
+									</li>
+									<li><!-- CLIENTS -->
+										<a href="#clients">
+											CLIENTS
+										</a>
+									</li>
+									<li><!-- CONTACT -->
+										<a href="#contact">
+											CONTACT
+										</a>
+									</li>
+								</ul>
+
+							</nav>
+						</div>
+
+					</div>
+				</header>
+				<!-- /Top Nav -->
+
+			</div>
+
+			<hr class="m-5" /><!-- 1px line separator -->
+
+                    
+
+                         <div class="container mt-50">
+                   <div class="accordian" id="accordianExample">
+                      
+                       <div class="card">
+                           <div class="card-header" id="headingOne">
+                               <h5 class="mb-0">
+                                   <button class="btn btn-link" type="button"  data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                   FORMULAIRE RESIDENTIEL
+                                   </button>
+                               </h5>
+                           </div>
+                           <div id="collapseOne" class="collapse show" aria-lebelledby="headingOne" data-parent="#accordianExample">                       
+                               <div class="card-body">                
+                                   <div class="container">
+                                       <br><br>
+                                        <div id="residential" class="building_type">
+                                            <div class="row">
+                                            <div class="col-sm-6">
+                                                <img src="image/elevatorHouse.png" alt="house elevator" class="img-fluid">
+                                            </div>
+                                            <div class="col-sm-6">
+                                               <form>
+                                                  <div class="form-group">
+                                                     <label for="numberApartment">The number of apartments in the building</label>
+                                                     <input class="form-control-valid" type="number" id="numberApartment" min="1" max="100">                   
+                                                  </div>
+                                                  <div class="form-group">
+                                                     <label for="numberFloor">The number of floors contained in the building</label>
+                                                     <input class="form-control-valid" type="number" id="numberFloor" min="1" max="100">   
+                                                  </div>
+                                                  <div class="form-group">
+                                                      <label for="numberBasement">The number of basements contained in the building</label>
+                                                      <input class="form-control-valid" type="number" id="numberBasement" min="1" mas="100">
+                                                  </div>
+                                                  <div>
+                                                     <br><br>
+                                                      <button type="submit" class="btn btn-success">Submit</button>   
+                                                  </div>
+                                               </form>
+                                            </div>
+                                            </div>
+                                        </div> 
+                                   </div>         
+                               </div>
+                           </div>
+                       
+                       <div class="card">
+                           <div class="card-header" id="headingTwo">
+                               <h5 class="mb-0">                               
+                                  <button class="btn btn-link collapsed" type="button"  data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                   FORMULAIRE COMMERCIAL
+                                   </button>
+                               </h5>
+                           </div>
+                           <div id="collapseTwo" class="collapse" aria-lebelledby="headingTwo" data-parent="#accordianExample">                           
+                               <div class="card-body">
+                                      <div class="container">                      
+                                          <div class="row">
+                                 <div class="col-sm-6">
+                                     <img src="image/elevatorHouse.png" class="img-fluid">
+                                 </div>
+                                  <div class="col-sm-6">
+                                   <form>
+                                       <div class="form-group">
+                                           <label for="numberDistinctBusiness">The number of distinct businesses.</label>
+                                           <input class="form-control-valid" type="number" id="numberDistinctBusiness" min="1" max="100">
+                                       </div>
+
+                                       <div class="form-group">
+                                           <label for="numberFloor">The number of floors contained in the building</label>
+                                           <input class="form-control-valid" type="number" id="numberFloor" min="1" max="100">
+                                       </div>
+                                       <div class="form-group">
+                                           <label for="numberBasements">The number of basements contained in the building</label>
+                                           <input class="form-control-valid" type="number" id="numberBasements" min="1" max="100">
+                                       </div>
+
+                                       <div class="form-group">
+                                           <label for="numberParking">The number of parking space available</label>
+                                           <input class="form-control-valid" type="number" id="numberParking" min="1" max="100">
+                                       </div>
+                                       <div class="form-group">
+                                           <label for="numberElevatorCage">The number of elevator cages to be deployed</label>
+                                           <input class="form-control-valid" type="number" id="numberElevatorCage" min="1" max="100">
+                                       </div>                        
+                                        <div>
+                                         <br><br>
+                                          <button type="submit" class="btn btn-primary">Submit</button>   
+                                      </div>                                                             
+                                   </form>
+                                    </div>  
+                                </div>
+                                      </div>  
+                                  
+                                  
+                                  
+                                  
+                                  
+                                  
+                                  
+                                  
+                                  
+                               </div>
+                           </div>
+                       </div>
+                       
+                       <div class="card">
+                           <div class="card-header" id="headingThree">
+                               <h5 class="mb-0">                              
+                                  <button class="btn btn-link collapsed" type="button"  data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                   FORMULAIRE CORPORATIF
+                                   </button>
+                               </h5>
+                           </div>
+                           <div id="collapseThree" class="collapse" aria-lebelledby="headingThree" data-parent="#accordianExample">
+                               <div class="card-body">
+                                   &ldquo;Je suis le meilleur joueur de poker du monde&rsquo;ddjsjdsjfjs&rsquo; djsjdsjd &ldquo;dajsdjdjsjdajsjjdsj,dsajjdsajd,dsajdsj&rsquo;djjsajds&rdquo;<br><em>adjjdsajdasjsjd</em>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+               
+               <div>hola</div>
+               <div>mechant</div>
+               <div>ben oui</div>
+               <div>nooo</div>
+
+
+			<!-- FOOTER -->
+			<footer id="footer">
+				<div class="container">
+
+
+					<div class="row">
+
+						<!-- col #1 -->
+						<div class="col-md-8">
+
+							<h3 class="letter-spacing-1">WHY US?</h3>
+
+							<!-- Small Description -->
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur imperdiet hendrerit volutpat. Sed in nunc nec ligula consectetur mollis in vel justo. Vestibulum ante ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur imperdiet hendrerit volutpat.
+							</p>
+							<h2>(800) 123-4567</h2>
+						</div>
+						<!-- /col #1 -->
+
+						<!-- col #2 -->
+						<div class="col-md-4">
+							<h3 class="letter-spacing-1">KEEP IN TOUCH</h3>
+
+							<!-- Newsletter Form -->
+							<p>Subscribe to Our Newsletter to get Important News & Offers</p>
+
+							<form class="validate" action="php/newsletter.php" method="post" data-success="Subscribed! Thank you!" data-toastr-position="bottom-right">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+									<input type="email" id="email" name="email" class="form-control required" placeholder="Enter your Email">
+									<span class="input-group-btn">
+										<button class="btn btn-success" type="submit">Subscribe</button>
+									</span>
+								</div>
+							</form>
+							<!-- /Newsletter Form -->
+
+
+						</div>
+						<!-- /col #2 -->
+
+					</div>
+
+
+				</div>
+
+				<div class="copyright">
+					<div class="container">
+						<ul class="float-right m-0 list-inline mobile-block">
+							<li><a href="#">Terms &amp; Conditions</a></li>
+							<li>&bull;</li>
+							<li><a href="#">Privacy</a></li>
+						</ul>
+						&copy; All Rights Reserved, Company LTD
+					</div>
+				</div>
+
+			</footer>
+			<!-- /FOOTER -->
+
+		</div>
+		<!-- /wrapper -->
+
+
+
+
+		<!-- PRELOADER -->
+		<div id="preloader">
+			<div class="inner">
+				<span class="loader"></span>
+			</div>
+		</div><!-- /PRELOADER -->
+
+
+		<!-- JAVASCRIPT FILES -->
+		<script>var plugin_path = 'assets/plugins/';</script>
+		<script src="assets/plugins/jquery/jquery-3.3.1.min.js"></script>
+
+		<script src="assets/js/scripts.js"></script>
+		
+
+		<!-- REVOLUTION SLIDER -->
+		<script src="assets/plugins/slider.revolution/js/jquery.themepunch.tools.min.js"></script>
+		<script src="assets/plugins/slider.revolution/js/jquery.themepunch.revolution.min.js"></script>
+		<script src="assets/js/view/demo.revolution_slider.js"></script>
+
+		<!-- PAGELEVEL SCRIPTS -->
+		<script src="assets/js/contact.js"></script>
+
+		<!-- 
+			GMAP.JS 
+			http://hpneo.github.io/gmaps/
+		-->
+
+	</body>
+</html>

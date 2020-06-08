@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0">
+		<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+
+        <title>Form</title>
+    </head>
+    
+    
+    <body>
+    
+    
+    <h3>nombre de logement</h3>
+    <input type="number" id="appartement" value="0">
+    
+    <h3>nombre d'etage</h3>
+    <input type="number" id="etage" value="0">
+    
+    <h3>nombre de sous sol</h3>
+    <input type="number" id="soussol" value="0">
+    
+
+    
+    <button onclick="calcul()">Essaye moi</button>
+    
+    <br>
+    <br>
+    
+    <h3>Gamme</h3>
+    <button onclick="typeGamme()">
+        <input type="radio" id="standard" name="gamme">
+        <label for="standard">Standard</label>
+    </button>
+    
+
+    
+  <!-- <div>
+        <label class="btn btn-primary"><input type="radio" id="standard" name="gamme" autocomplete="off">Standard</label>
+        <label class="btn btn-primary"><input type="radio" id="premium" name="gamme" autocomplete="off">Premium</label>
+        <label class="btn btn-primary"><input type="radio" id="excelium" name="gamme" autocomplete="off">Excelium</label>
+    </div>
+    
+    <p id="demo"> </p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+ --> 
+   <p id="demo"> </p>
+   <p id="demo1"></p>
+   <p id="demo2"></p> 
+    <script>
+        
+    var nombreLogement = 0;
+    var nombreEtage = 0;
+    var nombreSoussol = 0;
+    var gammeStandard = 0;
+        
+    function typeGamme(){
+        var radiobtn = document.getElementById("standard").checked;
+        if(radiobtn = true){
+            gammeStandard = 7565;
+            return gammeStandard
+        }    
+    }
+    
+    
+
+
+
+    
+        
+    function calcul(gameStandard) {
+            var nombreLogement = document.getElementById("appartement").value;
+            var nombreEtage = document.getElementById("etage").value;
+            var nombreSoussol = document.getElementById("soussol").value;
+        
+        if ( (nombreLogement > 5 && nombreEtage > 1) || (nombreSoussol > 0 && nombreEtage > 0 && nombreLogement > 5) ) {
+            
+            var nbCageAscenseur = Math.floor(nombreLogement/6);
+            var colonneAscensur = 1 + Math.floor(nombreEtage/20);
+            
+            if(colonneAscensur > 1) {
+                nbCageAscenseur = nbCageAscenseur * 2
+            }
+            document.getElementById("demo2").innerHTML = "Cage Asc nessecaise: " + nbCageAscenseur + "  Nombre de colonne: " + colonneAscensur + "  nb asc par col: " + nbCageAscenseur/2 ;
+            
+            document.getElementById("demo").innerHTML = "Moyenne: " + (nombreLogement/nombreEtage);
+            document.getElementById("demo1").innerHTML = gammeStandard; 
+        }
+        else {
+            document.getElementById("demo1").innerHTML = "erreur, veuillez recommencer";
+        }
+    }
+    </script>
+    </body>
+</html>
