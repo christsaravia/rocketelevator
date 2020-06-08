@@ -76,7 +76,7 @@
             var nombreEtage = document.getElementById("etage").value;
             var nombreSoussol = document.getElementById("soussol").value;
         
-        if ( (nombreLogement > 5 && nombreEtage > 1) || (nombreSoussol > 0 && nombreEtage > 0 && nombreLogement > 5) ) {
+        if ( ( (nombreLogement > 5 && nombreEtage > 1) || (nombreSoussol > 0 && nombreEtage > 0 && nombreLogement > 5) ) && ((nombreLogement/nombreEtage)) >= 1  ) {
             
             var nbCageAscenseur = Math.floor(nombreLogement/6);
             var colonneAscensur = 1 + Math.floor(nombreEtage/20);
@@ -84,9 +84,9 @@
             if(colonneAscensur > 1) {
                 nbCageAscenseur = nbCageAscenseur * 2
             }
-            document.getElementById("demo2").innerHTML = "Cage Asc nessecaise: " + nbCageAscenseur + "  Nombre de colonne: " + colonneAscensur + "  nb asc par col: " + nbCageAscenseur/2 ;
+            document.getElementById("demo2").innerHTML = "Cage Asc need: " + nbCageAscenseur + "  Nombre de colonne: " + colonneAscensur + "  nb cage par col: " + nbCageAscenseur/2 ;
             
-            document.getElementById("demo").innerHTML = "Moyenne: " + (nombreLogement/nombreEtage);
+            document.getElementById("demo").innerHTML = "What-up"
             document.getElementById("demo1").innerHTML = gammeStandard; 
         }
         else {
