@@ -29,9 +29,22 @@
     <br>
     
     <h3>Gamme</h3>
-    <button onclick="typeGamme()">
+    <button onclick="typeGammeS()">
+       
         <input type="radio" id="standard" name="gamme">
         <label for="standard">Standard</label>
+    </button>
+    
+    <button onclick="typeGammeP()">
+       
+        <input type="radio" id="premium" name="gamme">
+        <label for="premium">Premium</label>
+    </button>
+    
+    <button onclick="typeGammeE()">
+        
+        <input type="radio" id="excelium" name="gamme">
+        <label for="excelium">Excelium</label>
     </button>
     
 
@@ -49,50 +62,85 @@
  --> 
    <p id="demo"> </p>
    <p id="demo1"></p>
-   <p id="demo2"></p> 
+   <p id="demo2"></p>
+   <p id="demo3"></p>
+   <p id="demo4"></p>
+   <p id="demo5"></p>
+   <p id="demo6"></p>       
     <script>
         
     var nombreLogement = 0;
     var nombreEtage = 0;
     var nombreSoussol = 0;
     var gammeStandard = 0;
+    var fraisInstallation = 0;
         
-    function typeGamme(){
+    function typeGammeS(){
         var radiobtn = document.getElementById("standard").checked;
         if(radiobtn = true){
             gammeStandard = 7565;
-            return gammeStandard
-        }    
+            fraisInstallation = 0.1;
+        }
+    }
+    
+    function typeGammeP(){
+        var radiobtn = document.getElementById("premium").checked;
+        if(radiobtn = true){
+            gammeStandard = 12345;
+            fraisInstallation = 0.13;
+        }
+    }
+        
+    function typeGammeE(){
+        var radiobtn = document.getElementById("excelium").checked;
+        if(radiobtn = true){
+            gammeStandard = 15400;
+            fraisInstallation = 0.16;
+        }
     }
     
     
-
-
+        
 
     
+
         
-    function calcul(gameStandard) {
+    function calcul() {
+        
             var nombreLogement = document.getElementById("appartement").value;
             var nombreEtage = document.getElementById("etage").value;
             var nombreSoussol = document.getElementById("soussol").value;
         
+            
+        
         if ( ( (nombreLogement > 5 && nombreEtage > 1) || (nombreSoussol > 0 && nombreEtage > 0 && nombreLogement > 5) ) && ((nombreLogement/nombreEtage)) >= 1  ) {
             
-            var nbCageAscenseur = Math.floor(nombreLogement/6);
-            var colonneAscensur = 1 + Math.floor(nombreEtage/20);
+            var moyenneAppFloor = nombreLogement / nombreEtage;
+            var nbCageAscenseur = Math.ceil(moyenneAppFloor/6);           
+            document.getElementById("demo4").innerHTML = "nbCageAscenseeur: " + nbCageAscenseur;
+            
+            var colonneAscensur = 1 + Math.round(nombreEtage/20);
             
             if(colonneAscensur > 1) {
-                nbCageAscenseur = nbCageAscenseur * 2
+                nbCageAscenseur = nbCageAscenseur * colonneAscensur;
+                document.getElementById("demo5").innerHTML = "nbCageAscenseeur: " + nbCageAscenseur;
             }
+
+            var elevatorCost = nbCageAscenseur * gammeStandard;
+            var InstallationCost = elevatorCost *  fraisInstallation;
+            var Total = elevatorCost + InstallationCost;
+            
+            document.getElementById("demo6").innerHTML = "elavatorCost: " + elevatorCost + " Frais d'installation: " + InstallationCost + " Total: " + Total;
+            
             document.getElementById("demo2").innerHTML = "Cage Asc need: " + nbCageAscenseur + "  Nombre de colonne: " + colonneAscensur + "  nb cage par col: " + nbCageAscenseur/2 ;
             
-            document.getElementById("demo").innerHTML = "What-up"
-            document.getElementById("demo1").innerHTML = gammeStandard; 
+
         }
         else {
-            document.getElementById("demo1").innerHTML = "erreur, veuillez recommencer";
+            document.getElementById("demo3").innerHTML = "erreur, veuillez recommencer";
         }
     }
+    
     </script>
     </body>
 </html>

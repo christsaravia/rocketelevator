@@ -262,23 +262,58 @@
                             </div>
                             
                             <div class="col-sm-6" style="text-align: right;padding: 30px">
-                                <form>
+                                
                                     <div class="form-group">
-                                     <label for="numberApartment">The number of apartments in the building</label>
-                                     <input class="form-control-valid" type="number" id="numberApartment" min="0" max="100">                   
+                                     <label for="appartement">The number of apartments in the building</label>
+                                     <input class="form-control-valid" type="number" id="appartement" min="0">                   
                                     </div>
                                     <div class="form-group">
-                                     <label for="numberFloor">The number of floors contained in the building</label>
-                                     <input class="form-control-valid" type="number" id="numberFloor" min="0" max="100">   
+                                     <label for="etage">The number of floors contained in the building</label>
+                                     <input class="form-control-valid" type="number" id="etage" min="0" >   
                                     </div>
                                     <div class="form-group">
-                                      <label for="numberBasement">The number of basements contained in the building</label>
-                                      <input class="form-control-valid" type="number" id="numberBasement" min="0" mas="100">
+                                      <label for="soussol">The number of basements contained in the building</label>
+                                      <input class="form-control-valid" type="number" id="soussol" min="0">
                                     </div>
                                     <div>
-                                      <button type="submit" class="btn btn-success">Submit</button>   
+                                      <button type="submit" class="btn btn-primary" onclick="calcul()">Submit</button>   
                                     </div>
-                               </form>
+                                    <div>
+                                        <br>
+                                        <p id="demo4"></p>
+                                    </div>
+                                    <div>
+                                        <br>
+                                        <br>
+
+                                        <h3>Choose the product line that suits you best</h3>
+                                        <button onclick="typeGammeS();calcul()">
+
+                                            <input type="radio" id="standard" name="gamme">
+                                            <label for="standard">Standard</label>        
+                                        </button>
+
+                                        <button onclick="typeGammeP();calcul()">
+
+                                            <input type="radio" id="premium" name="gamme">
+                                            <label for="premium">Premium</label>
+                                            <p id="demo7"></p>
+                                            <p id="demo8"></p>
+                                            <p id="demo9"></p>
+                                        </button>
+
+                                        <button onclick="typeGammeE();calcul()">
+                                            <input type="radio" id="excelium" name="gamme">
+                                            <label for="excelium">Excelium</label>
+                                            <p id="demo7"></p>
+                                            <p id="demo8"></p>
+                                            <p id="demo9"></p>
+                                        </button>
+                                        
+                                    </div>
+                                                                                  <div class"form-group"><p id="demo7"></p></div>
+                                                <div class"form-group"><p id="demo8"></p></div>
+                                                <div class"form-group"><p id="demo9"></p></div>
                             </div>
                         </div>
                     </div> 
@@ -404,6 +439,8 @@
                             </div>  
                         </div>
                     </div> 
+    
+                                       <p id="demo4"></p>
 
                 
 			    
@@ -545,10 +582,84 @@
 
 		<!-- PAGE LEVEL SCRIPT -->
 		<script async src="assets/js/view/pack_realestate.js"></script>
+       
         <script>
         
-        console.log("Bonjour");
-        </script>
+    var nombreLogement = 0;
+    var nombreEtage = 0;
+    var nombreSoussol = 0;
+    var gammeStandard = 0;
+    var fraisInstallation = 0;
+        
+    function typeGammeS(){
+        var radiobtn = document.getElementById("standard").checked;
+        if(radiobtn = true){
+            gammeStandard = 7565;
+            fraisInstallation = 0.1;
+        }
+    }
+    
+    function typeGammeP(){
+        var radiobtn = document.getElementById("premium").checked;
+        if(radiobtn = true){
+            gammeStandard = 12345;
+            fraisInstallation = 0.13;
+        }
+    }
+        
+    function typeGammeE(){
+        var radiobtn = document.getElementById("excelium").checked;
+        if(radiobtn = true){
+            gammeStandard = 15400;
+            fraisInstallation = 0.16;
+        }
+    }
+    
+    
+        
+
+    
+
+        
+    function calcul() {
+        
+            var nombreLogement = document.getElementById("appartement").value;
+            var nombreEtage = document.getElementById("etage").value;
+            var nombreSoussol = document.getElementById("soussol").value;
+        
+            
+        
+        if ( ( (nombreLogement > 5 && nombreEtage > 1) || (nombreSoussol > 0 && nombreEtage > 0 && nombreLogement > 5) ) && ((nombreLogement/nombreEtage)) >= 1  ) {
+            
+            var moyenneAppFloor = nombreLogement / nombreEtage;
+            var nbCageAscenseur = Math.ceil(moyenneAppFloor/6);           
+            
+            var colonneAscensur = 1 + Math.round(nombreEtage/20);
+            
+            if(colonneAscensur > 1) {
+                nbCageAscenseur = nbCageAscenseur * colonneAscensur;
+            }
+            
+            document.getElementById("demo4").innerHTML = "Number of recommanded elevator: " + nbCageAscenseur;
+            var elevatorCost = nbCageAscenseur * gammeStandard;
+            document.getElementById("demo7").innerHTML = "elavatorCost: " + elevatorCost;
+            var InstallationCost = elevatorCost *  fraisInstallation;
+            document.getElementById("demo8").innerHTML = "InstallationCost: " + InstallationCost;
+            var Total = elevatorCost + InstallationCost;
+            document.getElementById("demo9").innerHTML = "Total: " + Total;
+            
+            document.getElementById("demo6").innerHTML = "elavatorCost: " + elevatorCost + " Frais d'installation: " + InstallationCost + " Total: " + Total;
+            
+            document.getElementById("demo2").innerHTML = "Cage Asc need: " + nbCageAscenseur + "  Nombre de colonne: " + colonneAscensur + "  nb cage par col: " + nbCageAscenseur/2 ;
+            
+
+        }
+        else {
+            document.getElementById("demo3").innerHTML = "erreur, veuillez recommencer";
+        }
+    }
+    
+    </script>     
        
         <script>
 $(document).ready(function () {
