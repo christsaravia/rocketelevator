@@ -5,7 +5,7 @@
 		<title>Soumission</title>
 		<link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon" />
 		<meta name="description" content="" />
-		<meta name="Author" content="Dorin Grigoras [www.stepofweb.com]" />
+		<meta name="Author" content="Christ Saravia" />
 
 		<!-- mobile settings -->
 		<meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0" />
@@ -64,156 +64,82 @@
 			-->
 			<div id="header" class="navbar-toggleable-md clearfix header-sm sticky disable-uppercase">
 
-				<!-- TOP NAV -->
+								<!-- TOP NAV -->
 				<header id="topNav">
-					<div class="container">
+					<div class="container-fluid">
 
 						<!-- Mobile Menu Button -->
 						<button class="btn btn-mobile" data-toggle="collapse" data-target=".nav-main-collapse">
 							<i class="fa fa-bars"></i>
 						</button>
 
-
-
 						<!-- Logo -->
-						<a class="logo float-left" href="index-onepage-construction.html">
+						<a class="logo float-left scrollTo" href="index-onepage-construction.html">
 							<img src="assets/images/_smarty/R2.png" alt="" />
 						</a>
 
-
-
 						<!-- 
 							Top Nav 
+							
+							AVAILABLE CLASSES:
+							submenu-dark = dark sub menu
 						-->
-						<div class="navbar-collapse collapse float-right nav-main-collapse p-0">
+						<div class="navbar-collapse collapse float-right nav-main-collapse submenu-dark">
 							<nav class="nav-main">
 
-								<!--
-									NOTE
+								<!-- 
+									.nav-onepage
+									Required for onepage navigation links
 									
-									For a regular link, remove "dropdown" class from LI tag and "dropdown-toggle" class from the href.
-									Direct Link Example: 
-
-									<li>
-										<a href="#">HOME</a>
-									</li>
-
-									+ MENU EFFECTS
-										.nav-animate-fadeIn
-										.nav-animate-fadeInUp
-										.nav-animate-bounceIn
-										.nav-animate-bounceInUp
-										.nav-animate-flipInX
-										.nav-animate-flipInY
-										.nav-animate-zoomIn
-										.nav-animate-slideInUp
-
-										.nav-hover-animate 	= animate text on hover
-
+									Add .external for an external link!
 								-->
-								<ul id="topMain" class="nav nav-pills nav-main nav-animate-fadeIn">
-									<li class="dropdown"><!-- HOME -->
-										<a class="dropdown-toggle" href="index-onepage-construction.html">
-											<img src="image/house.png" alt="HOME"  width="30"> 
-										</a>
-										<ul class="dropdown-menu">
-											<li>
-												<a href="pack-realestate-home-1.html">
-													Home 1
-												</a>
-											</li>
-											<li>
-												<a href="pack-realestate-home-2.html">
-													Home 2
-												</a>
-											</li>
-											<li>
-												<a href="pack-realestate-home-3.html">
-													Home 3
-												</a>
-											</li>
-										</ul>
-									</li>
-									<li><!-- ABOUT -->
-										<a href="pack-realestate-about.html">
-											About Us
+				        <ul id="topMain" class="nav nav-pills nav-main nav-onepage">
+									
+									<li><!-- HOME -->
+										<a href="index-onepage-construction.html">
+										   <img src="image/house.png" alt="HOME"  width="40">
 										</a>
 									</li>
-									<li class="dropdown"><!-- PROPERTY -->
+									<li class="dropdown"><!-- SERVICES -->
 										<a class="dropdown-toggle" href="#">
-											Property
+											SERVICES
 										</a>
-										<ul class="dropdown-menu">
-											<li>
-												<a href="pack-realestate-property-list-1.html">
-													Property list 1
+								        <ul class="dropdown-menu">
+											<li class="dropdown">
+												<a href="page-services-4.html">
+													RESIDENTIAL BUILDING
 												</a>
 											</li>
-											<li>
-												<a href="pack-realestate-property-list-2.html">
-													Property list 2
+											<li class="dropdown">
+												<a href="page-services-3.html">
+													CORPORATE BUILDING
 												</a>
 											</li>
-											<li>
-												<a href="pack-realestate-property-list-3.html">
-													Property list 3
-												</a>
-											</li>
-											<li>
-												<a href="pack-realestate-property-search.html">
-													Property Search
-												</a>
-											</li>
-											<li>
-												<a href="pack-realestate-property-item.html">
-													Property Item 1
-												</a>
-											</li>
-											<li>
-												<a href="pack-realestate-property-item-2.html">
-													Property Item 2
-												</a>
-											</li>
-											<li>
-												<a href="pack-realestate-property-item-3.html">
-													Property Item 3
-												</a>
-											</li>
-											<li>
-												<a href="pack-realestate-property-item-4.html">
-													Property Item 4
-												</a>
-											</li>
-											<li>
-												<a href="pack-realestate-property-elements.html">
-													Property Elements
-												</a>
-											</li>
-											<li>
-												<a href="pack-realestate-property-signinup.html">
-													Property Sign In / Sign Up
-												</a>
-											</li>
-											<li>
-												<a href="pack-realestate-property-password.html">
-													Password Reset
-												</a>
-											</li>
-											<li class="active">
+											<li class="dropdown">
 												<a href="pack-realestate-mortgage-calc.html">
-													Mortgage Calculator
+													REQUEST A QUOTE
 												</a>
-											</li>
-										</ul>
+                                            </ul>
 									</li>
-									<li><!-- BLOG -->
-										<a href="pack-realestate-blog-list.html">
-											Blog
+									<li><!-- WORK -->
+										<a href="index-onepage-construction.html#work">
+											PORTFOLIO
+										</a>
+									</li>
+									
+									<li><!-- NEWS -->
+										<a href="index-onepage-construction.html#news">
+										    NEWS
+										</a>
+									</li>
+									<li><!-- CLIENTS -->
+										<a href="index-onepage-construction.html#clients">
+											CLIENTS
 										</a>
 									</li>
 									<li><!-- CONTACT -->
-										<a href="pack-realestate-contact-us.html">
-											Contact
+										<a href="index-onepage-construction.html#contact">
+											CONTACT
 										</a>
 									</li>
 								</ul>
@@ -249,7 +175,9 @@
                
             <div class="container">
                 <div class="container">
+                   
                     <div id="residential" class="building_type">
+                        
                        
                         <div class="row">
                             <h3>STEP 2</h3>  
@@ -265,138 +193,280 @@
                                 
                                     <div class="form-group">
                                      <label for="appartement">The number of apartments in the building</label>
-                                     <input class="form-control-valid" type="number" id="appartement" min="0">                   
+                                     <input class="form-control-valid" type="number" id="appartement" min="0">                
                                     </div>
+                                    
                                     <div class="form-group">
                                      <label for="etage">The number of floors contained in the building</label>
                                      <input class="form-control-valid" type="number" id="etage" min="0" >   
                                     </div>
+                                    
                                     <div class="form-group">
                                       <label for="soussol">The number of basements contained in the building</label>
                                       <input class="form-control-valid" type="number" id="soussol" min="0">
                                     </div>
+                                    
                                     <div>
                                       <button type="submit" class="btn btn-primary" onclick="calcul()">Submit</button>   
-                                    </div>
-                                    <div>
-                                        <br>
-                                        <p id="demo4"></p>
-                                    </div>
-                                    <div>
-                                        <br>
-                                        <br>
+                                    </div>                  
+                            </div>
+                            
 
-                                        <h3>Choose the product line that suits you best</h3>
-                                        <button onclick="typeGammeS();calcul()">
-
-                                            <input type="radio" id="standard" name="gamme">
-                                            <label for="standard">Standard</label>        
-                                        </button>
-
-                                        <button onclick="typeGammeP();calcul()">
-
-                                            <input type="radio" id="premium" name="gamme">
-                                            <label for="premium">Premium</label>
-                                            <p id="demo7"></p>
-                                            <p id="demo8"></p>
-                                            <p id="demo9"></p>
-                                        </button>
-
-                                        <button onclick="typeGammeE();calcul()">
-                                            <input type="radio" id="excelium" name="gamme">
-                                            <label for="excelium">Excelium</label>
-                                            <p id="demo7"></p>
-                                            <p id="demo8"></p>
-                                            <p id="demo9"></p>
-                                        </button>
+                        </div>
+                        
+                        <div class="row">                                   
+                            <div class="col-4"></div>
+                            <div class="col-4"><br><br><br><p id="demo4"></p> <!-- Number of recommanded elevator --></div>
+                            <div class="col-4"></div>
+                        </div>
+                                       
                                         
-                                    </div>
-                                                                                  <div class"form-group"><p id="demo7"></p></div>
-                                                <div class"form-group"><p id="demo8"></p></div>
-                                                <div class"form-group"><p id="demo9"></p></div>
+                        
+                
+                        
+                        <div class="row"><h3>STEP 3</h3></div>
+                        <div class="row">
+                        <p style="text-transform: uppercase"><b>Please choose one range from the following three ranges</b></p>
+                        </div>
+                        <div class="row" style="text-align: center">
+                            
+                            <div class="col-4" style="background: blue">
+                                <button onclick="typeGammeS();calcul()">
+                                    <input type="radio" id="standard" name="gamme">
+                                    <label for="standard" style="color: white">Standard</label>
+                                     
+                                </button>
+                            </div>
+
+                            <div class="col-4" style="background: orange">
+                                <button onclick="typeGammeP();calcul()">
+                                
+                                    <input type="radio" id="premium" name="gamme">
+                                    <label for="premium" style="color: white">Premium</label>
+                                
+                                </button>
+                            </div>
+
+                           
+                            <div class="col-4" style="background: red">
+                                <button onclick="typeGammeE();calcul()">
+
+                                    <input type="radio" id="excelium" name="gamme">
+                                    <label for="excelium" style="color: white">Excelium</label>
+                                
+                                </button>
                             </div>
                         </div>
-                    </div> 
-                </div>
+                        
+                        <div class="row">
+                            <div class="col-4">
+                                ELEVATOR COST
+                                <p id="demo7"></p>
+                            </div>
+                            <div class="col-4">
+                                INSTALLATION COST
+                                <p id="demo8"></p>
+                            </div>
+                            <div class="col-4">
+                                TOTAL COST
+                                <p id="demo9"></p>
+                            </div>      
+                        </div>
+                                                   
+                    </div> <!-- ici ce termine le formulaire residentiel -->
+                </div> <!-- ici fin du container -->
+            </div> <!-- ici fin d'un autre container -->
+                <div class="container">
                     
                     <div id="commercial" class="building_type">
                        
                         <div class="row">
-                         <div class="col-sm-6">
+                            <div class="col-sm-6">
                              <img src="image/elevatorHouse.png" class="img-fluid">
-                         </div>
-                          <div class="col-sm-6">
-                           <form>
-                               <div class="form-group">
-                                   <label for="numberDistinctBusiness">The number of distinct businesses.</label>
-                                   <input class="form-control-valid" type="number" id="numberDistinctBusiness" min="1" max="100">
-                               </div>
+                            </div>
+                            
+                            <div class="col-sm-6">
+                           
+                                <div class="form-group">
+                                    <label for="numberDistinctBusiness">The number of distinct businesses.</label>
+                                    <input class="form-control-valid" type="number" id="numberDistinctBusiness" min="1" max="100">
+                                </div>
                                             
-                               <div class="form-group">
+                                <div class="form-group">
                                    <label for="numberFloor">The number of floors contained in the building</label>
                                    <input class="form-control-valid" type="number" id="numberFloor" min="1" max="100">
-                               </div>
-                               <div class="form-group">
+                                </div>
+                                
+                                <div class="form-group">
                                    <label for="numberBasements">The number of basements contained in the building</label>
                                    <input class="form-control-valid" type="number" id="numberBasements" min="1" max="100">
-                               </div>
+                                </div>
                                             
-                               <div class="form-group">
+                                <div class="form-group">
                                    <label for="numberParking">The number of parking space available</label>
                                    <input class="form-control-valid" type="number" id="numberParking" min="1" max="100">
-                               </div>
-                               <div class="form-group">
+                                </div>
+                                
+                                <div class="form-group">
                                    <label for="numberElevatorCage">The number of elevator cages to be deployed</label>
                                    <input class="form-control-valid" type="number" id="numberElevatorCage" min="1" max="100">
-                               </div>                        
+                                </div>
+                                                        
                                 <div>
-                                 <br><br>
-                                  <button type="submit" class="btn btn-primary">Submit</button>   
-                              </div>                                                             
-                           </form>
+                                  <button type="submit" class="btn btn-primary" onclick="calculCommercial()">Submit</button>   
+                                </div>                                                             
+                           
                             </div>  
+                        </div>                  
+                        <div class="row">                                   
+                            <div class="col-4"></div>
+                            <div class="col-4"><br><br><br><p id="demo10"></p> <!-- Number of recommanded elevator --></div>
+                            <div class="col-4"></div>
                         </div>
-                    </div> 
-                    
-                    <div id="corporatif" class="building_type">
-                       
+                        
+                        <div class="row"><h3>STEP 3</h3></div>
+                        
                         <div class="row">
-                              <div class="col-sm-6">
-                                  <img src="image/elevatorHouse.png" class="img-fluid">
-                              </div>
-                              <div class="col-sm-6">
-                               <form>
-                                   <div class="form-group">
-                                       <label for="numberSeperateCompanies">The number of separate tenant companies</label>
-                                       <input class="form-control-valid" type="number" id="numberSeperateCompanies" min="1" max="100">
-                                   </div>
-                                                
-                                   <div class="form-group">
-                                       <label for="numberFloor">The number of floors contained in the building</label>
-                                       <input class="form-control-valid" type="number" id="numberFloor" min="1" max="100">
-                                   </div>
-                                   <div class="form-group">
-                                       <label for="numberBasements">The number of basements contained in the building</label>
-                                       <input class="form-control-valid" type="number" id="numberBasements" min="1" max="100">
-                                   </div>
-                                                
-                                   <div class="form-group">
-                                       <label for="numberParking">The number of parking space available</label>
-                                       <input class="form-control-valid" type="number" id="numberParking" min="1" max="100">
-                                   </div>
-                                   <div class="form-group">
-                                       <label for="numberMaxOccupants">The maximum number of occupants per floor</label>
-                                       <input class="form-control-valid" type="number" id="numberMaxOccupants" min="1" max="100">
-                                   </div>
-                                  <div>
-                                     <br><br>
-                                      <button type="submit" class="btn btn-info">Submit</button>   
-                                  </div>                                                               
-                               </form>  
-                              </div>
+                            <p style="text-transform: uppercase">
+                            <b>Please choose one range from the following three ranges</b>
+                            </p>
                         </div>
-                    </div> 
+                        
+                        <div class="row" style="text-align: center">
+                            
+                            <div class="col-4" style="background: blue">
+                                <button onclick="typeGammeS();calculCommercial()">
+                                    <input type="radio" id="standard" name="gamme">
+                                    <label for="standard" style="color: white">Standard</label>
+                                </button>
+                            </div>
+
+                            <div class="col-4" style="background: orange">
+                                <button onclick="typeGammeP();calculCommercial()">
+                                    <input type="radio" id="premium" name="gamme">
+                                    <label for="premium" style="color: white">Premium</label>
+                                </button>
+                            </div>
+
+                           
+                            <div class="col-4" style="background: red">
+                                <button onclick="typeGammeE();calculCommercial()">
+                                    <input type="radio" id="excelium" name="gamme">
+                                    <label for="excelium" style="color: white">Excelium</label>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col-4">
+                                ELEVATOR COST
+                                <p id="demo11"></p>
+                            </div>
+                            <div class="col-4">
+                                INSTALLATION COST
+                                <p id="demo12"></p>
+                            </div>
+                            <div class="col-4">
+                                TOTAL COST
+                                <p id="demo13"></p>
+                            </div>      
+                        </div>
+                    </div> <!-- ici ce termine le formulaire commercial -->
+                    </div>
+                
+                    <div class="container">  
+                        <div id="corporatif" class="building_type">
+                           
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <img src="image/elevatorHouse.png" class="img-fluid">
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label for="numberSeperateCompanies">The number of separate tenant companies</label>
+                                    <input class="form-control-valid" type="number" id="numberSeperateCompanies" min="1" max="100">
+                                    </div>
+                                                    
+                                <div class="form-group">
+                                    <label for="numberFloorB">The number of floors contained in the building</label>
+                                    <input class="form-control-valid" type="number" id="numberFloorB" min="1" max="100">
+                                </div>
+                                       
+                                <div class="form-group">
+                                    <label for="numberBasementsB">The number of basements contained in the building</label>
+                                    <input class="form-control-valid" type="number" id="numberBasementsB" min="1" max="100">
+                                </div>
+                                                    
+                                <div class="form-group">
+                                    <label for="numberParkingB">The number of parking space available</label>
+                                    <input class="form-control-valid" type="number" id="numberParkingB" min="1" max="100">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="numberMaxOccupantsB">The maximum number of occupants per floor</label>
+                                    <input class="form-control-valid" type="number" id="numberMaxOccupantsB" min="1" max="100">
+                                </div>
+                                <div>
+                                    <br><br>
+                                    <button type="submit" class="btn btn-info" onclick="calculCorporatif()">Submit</button>   
+                                </div>                                                               
+                            </div>
+                        </div>
+                        <div class="row">                                   
+                            <div class="col-4"></div>
+                            <div class="col-4"><br><br><br><p id="demo14"></p> <!-- Number of recommanded elevator --></div>
+                        </div>
+                        <div class="row"><h3>STEP 3</h3></div>
+                        
+                        <div class="row">
+                            <p style="text-transform: uppercase">
+                            <b>Please choose one range from the following three ranges</b>
+                            </p>
+                        </div>
+                        
+                        <div class="row" style="text-align: center">
+                            
+                            <div class="col-4" style="background: blue">
+                                <button onclick="typeGammeS();calculCorporatif()">
+                                    <input type="radio" id="standard" name="gamme">
+                                    <label for="standard" style="color: white">Standard</label>
+                                </button>
+                            </div>
+
+                            <div class="col-4" style="background: orange">
+                                <button onclick="typeGammeP();calculCorporatif()">
+                                    <input type="radio" id="premium" name="gamme">
+                                    <label for="premium" style="color: white">Premium</label>
+                                </button>
+                            </div>
+
+                           
+                            <div class="col-4" style="background: red">
+                                <button onclick="typeGammeE();calculCorporatif()">
+                                    <input type="radio" id="excelium" name="gamme">
+                                    <label for="excelium" style="color: white">Excelium</label>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col-4">
+                                ELEVATOR COST
+                                <p id="demo15"></p>
+                            </div>
+                            <div class="col-4">
+                                INSTALLATION COST
+                                <p id="demo16"></p>
+                            </div>
+                            <div class="col-4">
+                                TOTAL COST
+                                <p id="demo17"></p>
+                            </div>      
+                        </div>
+                        </div> 
+                    </div>
                     
+                    <div class="container">
                     <div id="hybride" class="building_type">
                        
                         <div class="row">                              
@@ -404,7 +474,6 @@
                                   <img src="image/elevatorHouse.png" class="img-fluid" >
                               </div>
                               <div class="col-sm-6">
-                           <form>
                                <div class="form-group">
                                    <label for="numberDistinctBusiness">The number of distinct businesses</label>
                                    <input class="form-control-valid" type="number" id="numberDistinctBusiness" min="1" max="100">
@@ -412,11 +481,11 @@
                                             
                                <div class="form-group">
                                    <label for="numberFloor">The number of floors contained in the building</label>
-                                   <input class="form-control-valid" type="number" id="numberFloor" min="1" max="100">
+                                   <input class="form-control-valid" type="number" id="numberFloorA" min="1" max="100">
                                </div>
                                <div class="form-group">
                                    <label for="numberBasements">The number of basements contained in the building</label>
-                                   <input class="form-control-valid" type="number" id="numberBasements" min="1" max="100">
+                                   <input class="form-control-valid" type="number" id="numberBasementsA" min="1" max="100">
                                </div>
                                             
                                <div class="form-group">
@@ -425,7 +494,7 @@
                                </div>
                                <div class="form-group">
                                    <label for="numberMaxOccupants">The maximum number of occupants per floor</label>
-                                   <input class="form-control-valid" type="number" id="numberMaxOccupants" min="1" max="100">
+                                   <input class="form-control-valid" type="number" id="numberMaxOccupantsA" min="1">
                                </div>  
                                <div class="form-group">
                                    <label for="numberHoursActivity">The number of hours of activity of the building (the maximum being 24)</label>
@@ -433,127 +502,129 @@
                                </div>                              
                                <div>
                                  <br><br>
-                                  <button type="submit" class="btn btn-secondary">Submit</button>   
-                               </div>                                                            
-                           </form>
-                            </div>  
+                                  <button type="submit" class="btn btn-secondary" onclick="calculHybrid()">Submit</button>   
+                               </div>
+                            </div> 
                         </div>
+                               <div class="row">                                   
+                            <div class="col-4"></div>
+                            <div class="col-4"><br><br><p id="demo18"></p> <!-- Number of recommanded elevator --></div>
+                        </div>
+                        <div class="row"><h3>STEP 3</h3></div>
+                        
+                        <div class="row">
+                            <p style="text-transform: uppercase">
+                            <b>Please choose one range from the following three ranges</b>
+                            </p>
+                        </div>
+                        
+                        <div class="row" style="text-align: center">
+                            
+                            <div class="col-4" style="background: blue">
+                                <button onclick="typeGammeS();calculHybrid()">
+                                    <input type="radio" id="standard" name="gamme">
+                                    <label for="standard" style="color: white">Standard</label>
+                                </button>
+                            </div>
+
+                            <div class="col-4" style="background: orange">
+                                <button onclick="typeGammeP();calculHybrid()">
+                                    <input type="radio" id="premium" name="gamme">
+                                    <label for="premium" style="color: white">Premium</label>
+                                </button>
+                            </div>
+
+                           
+                            <div class="col-4" style="background: red">
+                                <button onclick="typeGammeE();calculHybrid()">
+                                    <input type="radio" id="excelium" name="gamme">
+                                    <label for="excelium" style="color: white">Excelium</label>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col-4">
+                                ELEVATOR COST
+                                <p id="demo19"></p>
+                            </div>
+                            <div class="col-4">
+                                INSTALLATION COST
+                                <p id="demo20"></p>
+                            </div>
+                            <div class="col-4">
+                                TOTAL COST
+                                <p id="demo21"></p>
+                            </div>      
+                        </div>                                                            
+                           
+                               
+                    </div>
                     </div> 
     
-                                       <p id="demo4"></p>
+                                
 
-                
-			    
-			</div>
-
-
-			<!-- FOOTER -->
-			<footer id="footer" class="footer-light">
+            <!-- FOOTER -->
+			<footer id="footer">
 				<div class="container">
 
-					<div class="row text-xs-center">
+
+					<div class="row">
 
 						<!-- col #1 -->
-						<div class="spaced col-md-4 col-sm-4 text-xs-center">
+						<div class="col-md-8">
 
-							<!-- Footer Logo -->
-							<img class="footer-logo inline-block" src="demo_files/images/packs/realestate/logo-footer.png" alt="" />
+							<h3 class="letter-spacing-1">WHY US?</h3>
 
+							<!-- Small Description -->
 							<p>
-								Smarty Real Estate is based in New York and is supported internationally by 34 offices in 12 countries.
+								Rocket Elevators is offering you the best elevators and services that you can find on the market. Also, our prices are inevitably unbeatable .
 							</p>
-
-							<h2 class="noshadow m-0">(800) 123-4567</h2>
-
+							<h2>1(581) 701-0303</h2>
 						</div>
 						<!-- /col #1 -->
 
 						<!-- col #2 -->
-						<div class="col-md-8 col-sm-8 hidden-sm hidden-xs-down">
+						<div class="col-md-4">
+							<h3 class="letter-spacing-1">KEEP IN TOUCH</h3>
 
-							<div class="row">
+							<!-- Newsletter Form -->
+							<p>Subscribe to Our Newsletter to get Important News & Offers</p>
 
-								<div class="col-md-4">
-									<h4 class="letter-spacing-1">EXPLORE</h4>
-									<ul class="list-unstyled">
-										<li><a class="block" href="#"><i class="fa fa-angle-right"></i> Countries</a></li>
-										<li><a class="block" href="#"><i class="fa fa-angle-right"></i> Cities</a></li>
-										<li><a class="block" href="#"><i class="fa fa-angle-right"></i> Airports</a></li>
-										<li><a class="block" href="#"><i class="fa fa-angle-right"></i> Hotels</a></li>
-										<li><a class="block" href="#"><i class="fa fa-angle-right"></i> Hostels</a></li>
-										<li><a class="block" href="#"><i class="fa fa-angle-right"></i> Apartments</a></li>
-									</ul>
-
+							<form class="validate" action="php/newsletter.php" method="post" data-success="Subscribed! Thank you!" data-toastr-position="bottom-right">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+									<input type="email" id="email" name="email" class="form-control required" placeholder="Enter your Email">
+									<span class="input-group-btn">
+										<button class="btn btn-success" type="submit">Subscribe</button>
+									</span>
 								</div>
+							</form>
+							<!-- /Newsletter Form -->
 
-								<div class="col-md-4">
-									<h4 class="letter-spacing-1">WANT MORE?</h4>
-									<ul class="list-unstyled">
-										<li><a class="block" href="#"><i class="fa fa-angle-right"></i> Car Rental</a></li>
-										<li><a class="block" href="#"><i class="fa fa-angle-right"></i> Guesthouses</a></li>
-										<li><a class="block" href="#"><i class="fa fa-angle-right"></i> Resorts</a></li>
-										<li><a class="block" href="#"><i class="fa fa-angle-right"></i> Property Types</a></li>
-										<li><a class="block" href="#"><i class="fa fa-angle-right"></i> Careers</a></li>
-										<li><a class="block" href="#"><i class="fa fa-angle-right"></i> Gallery</a></li>
-										<li><a class="block" href="#"><i class="fa fa-angle-right"></i> FAQ</a></li>
-									</ul>
-								</div>
-
-								<div class="col-md-4">
-									<h4 class="letter-spacing-1">UTILS</h4>
-									<ul class="list-unstyled">
-										<li><a class="block" href="#"><i class="fa fa-angle-right"></i> About Us</a></li>
-										<li><a class="block" href="#"><i class="fa fa-angle-right"></i> Press Center</a></li>
-										<li><a class="block" href="#"><i class="fa fa-angle-right"></i> Privacy &amp; Policy</a></li>
-										<li><a class="block" href="#"><i class="fa fa-angle-right"></i> Terms &amp; Conditions</a></li>
-										<li><a class="block" href="#"><i class="fa fa-angle-right"></i> Contact Us</a></li>
-									</ul>
-								</div>
-
-							</div>
 
 						</div>
 						<!-- /col #2 -->
 
 					</div>
 
+
 				</div>
 
-				<div class="copyright has-social">
+				<div class="copyright">
 					<div class="container">
-
-						<!-- Social Icons -->
-						<div class="float-right nofloat-xs text-xs-center">
-							<a href="#" class="social-icon social-icon-sm social-icon-transparent social-facebook" data-toggle="tooltip" data-placement="top" title="Facebook">
-								<i class="icon-facebook"></i>
-								<i class="icon-facebook"></i>
-							</a>
-
-							<a href="#" class="social-icon social-icon-sm social-icon-transparent social-twitter" data-toggle="tooltip" data-placement="top" title="Twitter">
-								<i class="icon-twitter"></i>
-								<i class="icon-twitter"></i>
-							</a>
-
-							<a href="#" class="social-icon social-icon-sm social-icon-transparent social-gplus" data-toggle="tooltip" data-placement="top" title="Google plus">
-								<i class="icon-gplus"></i>
-								<i class="icon-gplus"></i>
-							</a>
-
-							<a href="#" class="social-icon social-icon-sm social-icon-transparent social-linkedin" data-toggle="tooltip" data-placement="top" title="Linkedin">
-								<i class="icon-linkedin"></i>
-								<i class="icon-linkedin"></i>
-							</a>
-						</div>
-						<!-- /Social Icons -->
-
-						<div class="copyright-text float-left nofloat-xs">
-							&copy; All Rights Reserved, Company LTD
-						</div>
+						<ul class="float-right m-0 list-inline mobile-block">
+							<li><a href="#">Terms &amp; Conditions</a></li>
+							<li>&bull;</li>
+							<li><a href="#">Privacy</a></li>
+						</ul>
+						&copy; All Rights Reserved, Company LTD
 					</div>
 				</div>
 
 			</footer>
 			<!-- /FOOTER -->
+
 
 
 		</div>
@@ -642,11 +713,11 @@
             
             document.getElementById("demo4").innerHTML = "Number of recommanded elevator: " + nbCageAscenseur;
             var elevatorCost = nbCageAscenseur * gammeStandard;
-            document.getElementById("demo7").innerHTML = "elavatorCost: " + elevatorCost;
+            document.getElementById("demo7").innerHTML = elevatorCost.toFixed(2) + " $";
             var InstallationCost = elevatorCost *  fraisInstallation;
-            document.getElementById("demo8").innerHTML = "InstallationCost: " + InstallationCost;
+            document.getElementById("demo8").innerHTML = InstallationCost.toFixed(2) + " $";
             var Total = elevatorCost + InstallationCost;
-            document.getElementById("demo9").innerHTML = "Total: " + Total;
+            document.getElementById("demo9").innerHTML = Total.toFixed(2) + " $";
             
             document.getElementById("demo6").innerHTML = "elavatorCost: " + elevatorCost + " Frais d'installation: " + InstallationCost + " Total: " + Total;
             
@@ -658,6 +729,71 @@
             document.getElementById("demo3").innerHTML = "erreur, veuillez recommencer";
         }
     }
+    
+    function calculCommercial() {
+        var cageEstime = document.getElementById("numberElevatorCage").value;
+        
+        document.getElementById("demo10").innerHTML = "Number of recommanded elevator: " + cageEstime;
+        var elevatorCost = cageEstime * gammeStandard;
+        document.getElementById("demo11").innerHTML = elevatorCost.toFixed(2) + " $";
+        var InstallationCost = elevatorCost *  fraisInstallation;
+        document.getElementById("demo12").innerHTML = InstallationCost.toFixed(2) + " $";
+        var Total = elevatorCost + InstallationCost;
+        document.getElementById("demo13").innerHTML = Total.toFixed(2) + " $";                
+        
+    }
+    
+     function calculCorporatif() {
+         var y = 0;
+         var y = document.getElementById("numberFloorB").value;
+         y = parseInt(y);
+         var x = 0;
+         var x = document.getElementById("numberBasementsB").value;
+         var x = parseInt(x);
+         var xy = 0;
+         var xy = parseInt(x) + parseInt(y);
+         var a = document.getElementById("numberMaxOccupantsB").value;
+         var xyA = xy * parseInt(a);
+         var nbAs = Math.ceil(xyA / 1000);
+         var nbC = Math.ceil(xy / 20);
+         var nbAsnbC = Math.ceil(nbAs / nbC);
+         var tot = nbC * nbAsnbC;
+         document.getElementById("demo14").innerHTML = "Recommended number of elevators: " + tot;
+         
+        var elevatorCost = tot * gammeStandard;
+        document.getElementById("demo15").innerHTML = elevatorCost.toFixed(2) + " $";
+        var InstallationCost = elevatorCost *  fraisInstallation;
+        document.getElementById("demo16").innerHTML = InstallationCost.toFixed(2) + " $";
+        var Total = elevatorCost + InstallationCost;
+        document.getElementById("demo17").innerHTML = Total.toFixed(2) + " $";                
+    }
+    
+    function calculHybrid() {
+         var y = 0;
+         var y = document.getElementById("numberFloorA").value;
+         y = parseInt(y);
+         var x = 0;
+         var x = document.getElementById("numberBasementsA").value;
+         var x = parseInt(x);
+         var xy = 0;
+         var xy = parseInt(x) + parseInt(y);
+         var a = document.getElementById("numberMaxOccupantsA").value;
+         var xyA = xy * parseInt(a);
+         var nbAs = Math.ceil(xyA / 1000);
+         var nbC = Math.ceil(xy / 20);
+         var nbAsnbC = Math.ceil(nbAs / nbC);
+         var tot = nbC * nbAsnbC;
+         document.getElementById("demo18").innerHTML = "Recommended number of elevators: " + tot;
+        
+         var elevatorCost = tot * gammeStandard;
+         document.getElementById("demo19").innerHTML = elevatorCost.toFixed(2) + " $";
+         var InstallationCost = elevatorCost *  fraisInstallation;
+         document.getElementById("demo20").innerHTML = InstallationCost.toFixed(2) + " $";
+         var Total = elevatorCost + InstallationCost;
+         document.getElementById("demo21").innerHTML = Total.toFixed(2) + " $";      
+        
+    }
+    
     
     </script>     
        
